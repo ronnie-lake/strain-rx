@@ -1,0 +1,239 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #2f3f4e;
+  padding: 13px 0 19px 0;
+}
+.header__logo {
+  display: inline-block;
+  width: 190px;
+  height: 48px;
+  background: url(../img/logo.png) no-repeat;
+  float: left;
+}
+.header__menu {
+  display: inline-block;
+  list-style: none;
+  margin: 19px 22px 0 0;
+  float: right;
+}
+.header__menu-item {
+  display: inline-block;
+  padding-left: 15px;
+}
+.header__menu-item:not(:last-child):after {
+  content: '';
+  display: inline-block;
+  background-color: #10b3dc;
+  width: 2px;
+  height: 14px;
+  margin-left: 11px;
+}
+.header__link {
+  text-decoration: none;
+  color: #10b3dc;
+  font-family: 'Gotham';
+  font-size: 15px;
+  font-weight: 400;
+}
+.header__link:hover {
+  text-decoration: none;
+  color: #10b3dc;
+}
+.main__descript {
+  background: url(../img/header.png) no-repeat;
+  background-size: cover;
+}
+.main__mask {
+  background: rgba(0, 0, 0, 0.6);
+}
+.descript__container {
+  text-align: center;
+}
+.descript__mask {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 72px 0 84px 0;
+}
+.descript__caption {
+  display: block;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.descript__text {
+  display: inline-block;
+  width: 775px;
+  font-family: 'Gotham';
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.44px;
+  line-height: 23px;
+}
+.part {
+  text-align: center;
+  padding: 60px 0 27px 0;
+}
+.part__logo {
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 62px;
+}
+.part__logo_work {
+  background: url(../img/work.png) no-repeat;
+}
+.part__logo_smoking {
+  background: url(../img/smoking.png) no-repeat;
+}
+.part__logo_medical {
+  background: url(../img/medical.png) no-repeat;
+}
+.part__logo_side {
+  background: url(../img/side.png) no-repeat;
+}
+.part__caption {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-weight: 400;
+  color: #8e8e93;
+  margin: 44px 0 21px 0;
+  letter-spacing: -0.9px;
+}
+.part__caption_blue {
+  color: #10b3dc;
+  margin: 0;
+}
+.part__descript {
+  font-family: 'Gotham';
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e8e93;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  margin: 0 190px;
+}
+.part__descript_work {
+  width: 804px;
+}
+.part__descript_smoking {
+  width: 725px;
+}
+.part__descript_side {
+  width: 880px;
+}
+.part__descript_medical {
+  width: 868px;
+}
+.part__descript_blue {
+  font-size: 18px;
+  color: #10b3dc;
+}
+.part__img {
+  margin-top: 47px;
+}
+.results {
+  background: url(../img/results.png) no-repeat;
+  background-size: cover;
+  margin-top: 53px;
+  text-align: center;
+}
+.results__caption {
+  display: block;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-weight: 400;
+  color: #10b3dc;
+  margin: 79px 0 17px 0;
+}
+.results__text {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.4px;
+  width: 564px;
+}
+.results__img {
+  margin-bottom: 90px;
+}
+.results__container {
+  display: inline-block;
+  margin-bottom: 44px;
+}
+.results__button {
+  cursor: pointer;
+  display: inline-block;
+  background: #0eb4de;
+  font-family: 'Gotham Pro';
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  padding: 9px 50px 10px 50px;
+  border-radius: 6px;
+}
+.results__clar {
+  display: block;
+  font-family: 'Gotham Pro';
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 50px;
+}
+.results__or {
+  display: inline-block;
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-family: 'Arial';
+  font-size: 22px;
+  color: #fff;
+  vertical-align: top;
+  margin: 0 26px;
+}
+.footer {
+  background-color: #231f20;
+  text-align: center;
+  padding: 34px 0 38px 0;
+}
+.footer__menu-item {
+  display: inline-block;
+  padding-left: 10px;
+}
+.footer__menu-item:not(:last-child) {
+  border-right: 1px solid #fff;
+  padding-right: 5px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-family: 'Gotham';
+  font-weight: 400;
+}
+.footer__link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__copy {
+  display: inline-block;
+  margin-top: 23px;
+  color: #fff;
+  font-size: 11px;
+  font-family: 'Gotham';
+  font-weight: 400;
+}
