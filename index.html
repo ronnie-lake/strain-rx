@@ -11,7 +11,18 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__logo"></div>
+			<a href="#" class="header__logo">
+				<img class="header__logo-pic" src="img/logo.png" alt="">
+			</a>
+			<span class="header__burger"></span>
+			<ul class="header__menu header__menu_adaptive">
+				<li class="header__menu-item">
+				<a class="header__link" href="#">Sign Up</a>
+				</li>
+				<li class="header__menu-item">
+				<a class="header__link" href="#">Sign In</a>
+				</li>
+			</ul>
 			<ul class="header__menu">
 				<li class="header__menu-item">
 				<a class="header__link" href="#">Sign Up</a>
@@ -36,45 +47,39 @@
 		<div class="container">
 			<div class="main__part part">
 				<div class="row">
-					<div class="col-md-5"></div>
-					<div class="part__logo part__logo_work col-md-2"></div>
-					<div class="col-md-5"></div>
+					<div class="part__logo part__logo_work"></div>
 				</div>
-				<h1 class="part__caption">
-					How does StrainRx <span class="part__caption part__caption_blue">work?</span>
+				<h1 class="part__caption part__caption_how">
+					How does StrainRx work?
 				</h1>
 				<p class="part__descript part__descript_work">
 					Our strain matching system identifies your ideal strain option(s) based on 4 sets of criteria, with a local filter to help you find what you need nearby.
 				</p>
 				<p class="part__descript part__descript_work">
-First, select the class of cannabis you desire. <span class="part__descript_blue">Indica, Sativa, or Hybrid</span> are your options, and you can choose one, all, or skip this choice entirely. 
+First, select the class of cannabis you desire. <a href='https://strainrx.co/strains/indica/' class="part__descript_blue">Indica,</a> <a href='https://strainrx.co/strains/sativa/' class="part__descript_blue">Sativa,</a> <a href='https://strainrx.co/strains/hybrid/' class="part__descript_blue">or Hybrid</a> are your options, and you can choose one, all, or skip this choice entirely. 
 				</p>
 				<img src="img/screen1.png" alt="" class="part__img">
 				<img src="img/screen1ad.png" alt="" class="part__img-ad">
 			</div>
 			<div class="main__part part">
 				<div class="row">
-					<div class="col-md-5"></div>
-					<div class="part__logo part__logo_smoking col-md-2"></div>
-					<div class="col-md-5"></div>
+					<div class="part__logo part__logo_smoking"></div>
 				</div>
 				<h1 class="part__caption">
-					<span class="part__caption part__caption_blue">Smoking</span> recreationally?
+					Smoking recreationally?
 				</h1>
 				<p class="part__descript part__descript_smoking">
-					Take advantage of the <span class="part__descript_blue">EFFECT</span> related options! Choose up to 5 and configure a desired potency for each.
+					Take advantage of the EFFECT related options! Choose up to 5 and configure a desired potency for each.
 				</p>
-				<img src="img/screen2.png" alt="" class="part__img">
-				<img src="img/screen2ad.png" alt="" class="part__img-ad">
+				<img src="img/screen2.png" alt="" class="part__img part__img_expl">
+				<img src="img/screen2ad.png" alt="" class="part__img-ad part__img-ad_expl">
 			</div>
 			<div class="main__part part">
 				<div class="row">
-					<div class="col-md-5"></div>
-					<div class="part__logo part__logo_medical col-md-2"></div>
-					<div class="col-md-5"></div>
+					<div class="part__logo part__logo_medical"></div>
 				</div>
 				<h1 class="part__caption">
-					 <span class="part__caption part__caption_blue">Medical marijuana</span>
+					Medical marijuana
 				</h1>
 				<p class="part__descript part__descript_medical">
 					You have the opportunity to configure the desired benefits you hope to derive from using cannabis. Select from 13 ailments that include relief from conditions such as chronic pain, insomnia, and fatigue. Much like with effects, the potency meter indicates the importance of each selection. Users with no medical concerns can choose to skip this step as well. 
@@ -84,20 +89,17 @@ First, select the class of cannabis you desire. <span class="part__descript_blue
 			</div>
 			<div class="main__part part">
 				<div class="row">
-					<div class="col-md-5"></div>
-					<div class="part__logo part__logo_side col-md-2"></div>
-					<div class="col-md-5"></div>
+					<div class="part__logo part__logo_side"></div>
 				</div>
 				<h1 class="part__caption">
-					<span class="part__caption part__caption_blue">Side</span> effects?
+					Side effects?
 				</h1>
 				<p class="part__descript part__descript_side">
 					Finally, our wizard allows you to specify any sensitivities to the known side effects brought on by cannabis use. If a strain is known to produce the effects you deem to be undesirable, we’ll make sure to exclude it from the final recommendation. 
 				</p>
-					<p>
-					<span class="part__descript_blue">Don’t care about a little dry mouth? No problem, just skip ahead!</span>
-					</p>
-				
+				<p class="part__descript">
+					Don’t care about a little dry mouth? No problem, just skip ahead!
+				</p>
 				<img src="img/screen4.png" alt="" class="part__img">
 				<img src="img/screen4ad.png" alt="" class="part__img-ad">
 			</div>
@@ -110,26 +112,32 @@ First, select the class of cannabis you desire. <span class="part__descript_blue
 						And now you get your special and the best strain option(s),
 	selected according to your wishes!
 					</p>
-					<img src="img/screen5.png" alt="" class="results__img">
+					<img src="img/screen5.png" alt="" class="results__img results__img_expl">
 					<img src="img/screen5ad.png" alt="" class="results__img-ad">
-					<div class="results__container">
-						<span class="results__button">
-							Sign Up Now
+					<div class="row">
+						<div class="results__button-left col-lg-5 col-md-5 col-sm-5 col-xs-12">
+							<div class="results__container results__container_left">
+								<a href="#" class="results__button">
+									Sign Up Now
+								</a>
+								<span class="results__clar">
+									New Members
+								</span>
+							</div>
+						</div>
+						<span class="results__or col-lg-2 col-md-2 col-sm-2 col-xs-12">
+							or
 						</span>
-						<span class="results__clar">
-							New Members
-						</span>
-					</div>
-					<span class="results__or">
-						or
-					</span>
-					<div class="results__container_last">
-						<span class="results__button">
-							Find a Strain
-						</span>
-						<span class="results__clar">
-							Existing Members
-						</span>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+							<div class="results__container results__container_right">
+								<a href="#" class="results__button">
+									Find a Strain
+								</a>
+								<span class="results__clar">
+									Existing Members
+								</span>
+							</div>
+						</div>
 					</div>
 				</div>
 				</div>
@@ -151,5 +159,7 @@ First, select the class of cannabis you desire. <span class="part__descript_blue
 			</span>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js""></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
