@@ -1,3 +1,4 @@
+
 h1, h2, h3, h4, h5, h6, p, ul {
 	font-size: 0;
 	margin: 0;
@@ -129,6 +130,17 @@ a:focus {
 		background: url(../img/header.png) no-repeat;
 		background-size: 100%;
 		background-position: center 65%;
+
+		&_contacts {
+			background-image: url(../img/header-cont.png);
+			background-size: cover;
+			padding: 117px 0 102px 0;
+
+			@media (max-width: 768px) {
+			padding: 33px 0 30px 0;
+			}
+
+		}
 	}
 
 	&__mask {
@@ -532,6 +544,10 @@ a:focus {
 			text-decoration: none;
 			color: #fff;
 		}
+
+		&_green {
+			color: #52b826;
+		}
 	}
 
 	&__copy {
@@ -549,3 +565,5 @@ a:focus {
 			}
 	}
 }
+
+@import 'contacts.less';

@@ -1,0 +1,289 @@
+@import 'contacts.less';
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+.header {
+	position: relative;
+	background-color: #2f3f4e;
+	padding: 13px 0 19px 0;
+	min-width: 320px;
+
+	@media (max-width: 768px) {
+		padding: 10px 0;
+	}
+
+	&__logo {
+		display: inline-block;
+		width: 190px;
+		height: 48px;
+		float: left;
+
+		@media (max-width: 768px) {
+			width: 153px;
+			height: auto;
+		}
+	}
+
+	&__logo-pic {
+		width: 100%;
+	}
+
+	&__burger {
+		display: none;
+		float: right;
+		margin-top: 3px;
+		margin-right: 6px;
+		width: 25px;
+		height: 18px;
+		background: url(../img/burger.png) no-repeat;
+		cursor: pointer;
+
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	&__menu {
+		display: inline-block;
+		list-style: none;
+		margin: 19px 22px 0 0;
+		float: right;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+
+		&_adaptive {
+			display: none;
+
+			@media (max-width: 768px) {
+				display: none;
+				margin: 0;
+				position: absolute;
+				top: 59px;
+				left: 0;
+				width: 100%;
+				background-color: #2f3f4e;
+				border-top: 1px solid #231f20;
+			}
+		}
+	}
+
+	&__menu-item {
+		display: inline-block;
+		padding-left: 15px;
+
+		&:not(:last-child):after {
+			content: '';
+			display: inline-block;
+			background-color: #10b3dc;
+			width: 2px;
+			height: 14px;
+			margin-left: 11px;
+
+			@media (max-width: 768px) {
+				content: none;
+			}
+		}
+
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	&__link,
+	&__link:active,
+	&__link:focus {
+		display: inline-block;
+		text-decoration: none;
+		color: #10b3dc;
+		font-family: 'Gotham';
+		font-size: 15px;
+		font-weight: 400;
+
+		&:hover {
+			text-decoration: none;
+			color: #10b3dc;
+		}
+
+		@media (max-width: 768px) {
+			display: block;
+			padding: 15px;
+		}
+	}
+}
+
+.descript-contacts {
+
+	&__container {
+		text-align: center;
+	}
+
+	&__caption {
+		display: block;
+		font-family: 'Gotham';
+		font-size: 52px;
+		font-weight: 400;
+		color: #fff;
+		margin-bottom: 14px;
+
+		@media (max-width: 768px) {
+			font-size: 26px;
+			margin-bottom: 3px;
+		}
+	}
+}
+
+.touch {
+	padding: 56px 0 86px 0;
+	text-align: center;
+
+	@media (max-width: 768px) {
+			padding: 18px 0 37px 0;
+		}
+
+	&__caption {
+		font-family: 'Gotham';
+		font-size: 30px;
+		color: #333;
+		font-weight: 400;
+		margin-bottom: 29px;
+		letter-spacing: 0.1px;
+
+		@media (max-width: 768px) {
+			font-size: 20px;
+			margin-bottom: 18px;
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		font-family: 'Gotham';
+		font-size: 14px;
+		color: #333;
+		font-weight: 400;
+		line-height: 17px;
+		margin-bottom: 53px;
+		max-width: 670px;
+		min-width: 330px;
+		width: auto;
+
+		@media (max-width: 768px) {
+			margin-bottom: 23px;
+		}
+	}
+
+	&__form {
+		margin-bottom: 30px;
+	}
+
+	&__label {
+		display: block;
+		position: relative;
+		margin-left: 165px;
+
+		@media (max-width: 1200px) {
+				margin-left: 80px;
+			}
+
+		@media (max-width: 992px) {
+				margin-left: 0;
+				width: 329px;
+				margin: 0 auto;
+			}
+
+		&:before {
+			content: '';
+			display: block;
+			width: 26px;
+			height: 26px;
+			position: absolute;
+			top: 10px;
+			left: 9px;
+			border-right: 1px solid #d5d5d5;
+		}
+		
+		&_name:before {
+			background: url(../img/name.png) no-repeat 5px 6px;
+		}
+
+		&_mail:before {
+			background: url(../img/mail.png) no-repeat 5px 7px;
+			
+		}
+
+		&_subject:before {
+			background: url(../img/subject.png) no-repeat 8px 4px;
+			
+		}
+
+		&_message {
+
+			margin-left: 12px;
+			width: 388px;
+
+			@media (max-width: 992px) {
+				margin: 0 auto;
+				width: 328px;
+			}
+
+			&:before {
+				top: 10px;
+				left: 15px;
+				background: url(../img/message.png) no-repeat 1px 6px;
+			}
+
+		}
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		border: 2px solid #d5d5d5;
+		border-radius: 4px;
+		padding: 11px 45px;
+		margin-bottom: 27px;
+		color: #666;
+		font-family: 'Gotham';
+		font-size: 14px;
+		font-weight: 400;
+		outline: none;
+		
+		&_message {
+			height: 191px;
+			resize: none;
+			padding: 10px 52px;
+		}
+	}
+
+	&__button {
+		border: none;
+		float: right;
+		border-radius: 6px;
+		color: #fff;
+		font-family: 'Gotham';
+		font-size: 16px;
+		font-weight: 400;
+		background-color: #10b3dc;
+		padding: 11px 44px 9px 42px;
+		margin: 1px 155px 0 0;
+
+		@media (max-width: 992px) {
+				margin: 1px auto 0;
+				float: none;
+				display: inline-block;
+				text-align: center;
+				outline: none;
+			}
+	}
+}
