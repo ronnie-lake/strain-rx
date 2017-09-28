@@ -1,6 +1,5 @@
 
 h1, h2, h3, h4, h5, h6, p, ul {
-	font-size: 0;
 	margin: 0;
 	padding: 0;
 }
@@ -9,6 +8,37 @@ a,
 a:hover,
 a:focus {
 	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1140px;
+
+	&:before,
+	&:after {
+		display: table;
+		content: '';
+	}
+
+	&_after {
+		clear: both;
+	}
+
+	@media (max-width: 1200px) {
+		width: 960px
+	}
+
+	@media (max-width: 992px) {
+		width: 720px
+	}
+
+	@media (max-width: 768px) {
+		width: 540px;
+	}
+
+	@media (max-width: 576px) {
+		width: auto;
+	}
 }
 
 .header {
@@ -25,7 +55,6 @@ a:focus {
 		display: inline-block;
 		width: 190px;
 		height: 48px;
-		float: left;
 
 		@media (max-width: 768px) {
 			width: 153px;
@@ -148,7 +177,7 @@ a:focus {
 		background: rgba(0, 0, 0, 0.6);
 
 		@media (max-width: 768px) {
-			padding-bottom: 60px;
+			padding-bottom: 62px;
 		}
 	}
 }
@@ -304,7 +333,12 @@ a:focus {
 		&_blue:hover {
 			font-size: 18px;
 			color: #10b3dc;	
+
+			@media (max-width: 768px) {
+				font-size: 15px;
+			}
 		}
+
 		@media (max-width: 768px) {
 			font-size: 15px;
 			width: 260px;
@@ -442,7 +476,18 @@ a:focus {
 				float: none;
 			}
 		}
+	}
 
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		margin-left: -55px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			padding-top: 30px;
+			margin-left: 0;
+		}
 	}
 
 	&__button,
@@ -479,18 +524,18 @@ a:focus {
 		font-size: 22px;
 		color: #fff;
 		vertical-align: top;
-		margin: 6px -61px 0 -55px;
+		padding: 6px 36px 0 42px;
 
 		@media (max-width: 1200px) {
-			margin: 6px -43px 0 -36px;
+			padding: 6px 36px 0 42px;
 		}
 		@media (max-width: 992px) {
-			margin: 6px -36px 0 -36px;
+			padding: 6px 36px 0 42px;
 		}
 		@media (max-width: 768px) {
 			display: block;
 			font-size: 25px;
-			margin: 18px 0 14px 0;
+			padding: 23px 0 20px 0;
 		}
 	}
 }
@@ -504,17 +549,13 @@ a:focus {
 		padding: 27px 0;
 	}
 
-	&__menu {
-
-	}
-
 	&__menu-item {
 		display: inline-block;
 		padding-left: 10px;
 
 		@media (max-width: 768px) {
-				margin-bottom: 28px;
-			}
+			margin-bottom: 28px;
+		}
 
 		&:not(:last-child) {
 			border-right: 1px solid #fff;
@@ -525,7 +566,6 @@ a:focus {
 				border: none; 
 			}
 		}
-
 	}
 
 	&__link {
@@ -537,8 +577,8 @@ a:focus {
 		letter-spacing: .1px;
 
 		@media (max-width: 768px) {
-				font-size: 18px;
-			}
+			font-size: 18px;
+		}
 
 		&:hover {
 			text-decoration: none;
@@ -559,10 +599,10 @@ a:focus {
 		font-weight: 400;
 
 		@media (max-width: 768px) {
-				font-size: 16px;
-				margin-top: 0;
-				padding-top: 4px;
-			}
+			font-size: 16px;
+			margin-top: 0;
+			padding-top: 4px;
+		}
 	}
 }
 

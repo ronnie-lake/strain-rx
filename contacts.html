@@ -5,7 +5,6 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -33,7 +32,7 @@
 			</ul>
 		</div>
 	</header>
-		<main class="main">
+		<div class="main">
 		<div class="main__descript main__descript_contacts descript-contacts">
 			<div class="container descript-contacts__container">
 				<h1 class="descript-contacts__caption">Contact Us</h1>
@@ -44,8 +43,8 @@
 				<h1 class="touch__caption">Get in Touch</h1>
 				<p class="touch__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
 				<form action="#" class="touch__form">
-					<div class="row">
-						<div class="col-md-6">
+					<div class="touch__inputs-container">
+						<div class="touch__inputs">
 							<label for="name" class="touch__label touch__label_name">
 								<input type="text" id="name" class="touch__input" placeholder="Name">
 							</label>
@@ -56,7 +55,7 @@
 								<input type="text" id="subject" class="touch__input" placeholder="Subject">
 							</label>
 						</div>
-						<div class="col-md-6">
+						<div class="touch__inputs">
 							<label for="message" class="touch__label touch__label_message">
 								<textarea name="" id="message" cols="30" rows="10" class="touch__input touch__input_message" placeholder="Message"></textarea>
 							</label>
@@ -66,7 +65,7 @@
 				</form>
 			</div>
 		</div>
-	</main>
+	</div>
 	<footer class="footer">
 		<div class="container">
 			<ul class="footer__menu">
