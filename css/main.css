@@ -18,6 +18,9 @@ a:focus {
   margin: 0 auto;
   width: 1140px;
 }
+.container_large {
+  width: 1195px;
+}
 .container:before,
 .container:after {
   display: table;
@@ -779,4 +782,254 @@ a:focus {
     text-align: center;
     outline: none;
   }
+}
+.section__info {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1200px) {
+  .section__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+}
+.section__caption {
+  font-family: 'Roboto', sans-serif;
+  color: #2f3f4d;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-left: 14px;
+}
+@media (max-width: 1200px) {
+  .section__caption {
+    margin-top: 18px;
+  }
+}
+.section__caption:after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 3px;
+  background-color: #b6cd1b;
+  margin-top: 16px;
+}
+.section__container {
+  display: inline-block;
+  width: 838px;
+  vertical-align: top;
+  margin: 18px 84px 45px 14px;
+  flex-shrink: 1;
+}
+@media (max-width: 1200px) {
+  .section__container {
+    max-width: 838px;
+    min-width: 290px;
+    width: auto;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+    margin: 30px 15px 15px 15px;
+  }
+}
+.section__descript {
+  font-size: 14px;
+  font-family: 'Gotham';
+  font-weight: 400;
+  color: #2f3f4d;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 24px;
+  white-space: pre-wrap;
+}
+.section__img {
+  vertical-align: top;
+  width: 250px;
+  height: 237px;
+  display: inline-block;
+}
+.section__img_product {
+  margin-top: 16px;
+  background: url(../img/productivity.png) no-repeat;
+}
+@media (max-width: 1200px) {
+  .section__img_product {
+    margin-top: 34px;
+  }
+}
+.section__img_romantic {
+  background: url(../img/romantic.png) no-repeat;
+  margin-left: 4px;
+}
+.list {
+  list-style: none;
+  margin-bottom: 44px;
+}
+.list__item {
+  border-top: 3px double #b6cd1b;
+  padding-bottom: 46px;
+}
+.list__caption {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-weight: 800;
+  color: #2f3f4d;
+  text-transform: uppercase;
+  vertical-align: 30px;
+  background-color: #fff;
+  padding-right: 20px;
+  font-size: 29px;
+  letter-spacing: 0.4px;
+  padding-left: 12px;
+  margin-top: -17px;
+}
+@media (max-width: 389px) {
+  .list__caption_large {
+    width: 220px;
+    margin-top: -40px;
+  }
+}
+.list__container-large {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1200px) {
+  .list__container-large {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+}
+.list__container {
+  margin-right: 77px;
+  display: inline-block;
+  margin-top: -6px;
+}
+@media (max-width: 1200px) {
+  .list__container {
+    margin-right: 0;
+  }
+}
+.list__container_romance {
+  margin-top: -14px;
+}
+.list__container-min {
+  padding-left: 33px;
+  margin-top: -4px;
+}
+@media (max-width: 1200px) {
+  .list__container-min {
+    margin-top: 11px;
+  }
+}
+.list__img {
+  width: 232px;
+  height: 207px;
+}
+.list__img_romance {
+  height: 235px;
+}
+.list__img_blue {
+  background: url(../img/dream.png) no-repeat 15px 0;
+}
+.list__img_jack {
+  background: url(../img/jack.png) no-repeat 3px 0;
+}
+.list__img_green {
+  background: url(../img/green.png) no-repeat 0 0;
+}
+.list__img_poison {
+  background: url(../img/poison.png) no-repeat 15px 0;
+}
+.list__img_harlequin {
+  background: url(../img/harlequin.png) no-repeat 15px 0;
+}
+.list__img_sex {
+  background: url(../img/sex.png) no-repeat 15px 0;
+}
+.list__img_girl {
+  background: url(../img/girl.png) no-repeat 15px 0;
+}
+.list__img_bruce {
+  background: url(../img/bruce.png) no-repeat 15px 0;
+}
+.list__img_super {
+  background: url(../img/super.png) no-repeat 3px 0;
+}
+.list__img_og {
+  background: url(../img/og.png) no-repeat 15px 0;
+}
+.list__min-img {
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  margin-right: 3px;
+  margin-top: 10px;
+  background-size: 51px 51px;
+}
+.list__min-img_rasp {
+  background-image: url(../img/rasp.png);
+}
+.list__min-img_blue2 {
+  background-image: url(../img/blue2.png);
+}
+.list__min-img_lolipop {
+  background-image: url(../img/lolipop.png);
+}
+.list__min-img_showel {
+  background-image: url(../img/shovel.png);
+}
+.list__min-img_spruce {
+  background-image: url(../img/spruce.png);
+}
+.list__min-img_jack3 {
+  background-image: url(../img/jack3.png);
+}
+.list__min-img_green2 {
+  background-image: url(../img/green2.png);
+}
+.list__min-img_harlequin2 {
+  background-image: url(../img/harlequin2.png);
+}
+.list__min-img_raccon {
+  background-image: url(../img/raccon.png);
+}
+.list__min-img_red {
+  background-image: url(../img/red.png);
+}
+.list__min-img_gasoline {
+  background-image: url(../img/gasoline.png);
+}
+.list__min-img_citrus {
+  background-image: url(../img/citrus.png);
+}
+.list__min-img_herb {
+  background-image: url(../img/herb.png);
+}
+.list__descript {
+  vertical-align: top;
+  max-width: 878px;
+  min-width: 290px;
+  width: auto;
+  font-size: 14px;
+  font-family: 'Gotham';
+  font-weight: 400;
+  color: #2f3f4d;
+  display: inline-block;
+  line-height: 24px;
+  white-space: pre-wrap;
+}
+@media (max-width: 1200px) {
+  .list__descript {
+    margin: 0 15px 0 15px;
+  }
+}
+.list__descript_romance {
+  margin-top: -9px;
 }

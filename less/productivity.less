@@ -1,0 +1,284 @@
+.section {
+
+	&__info {
+		display: flex;
+		flex-wrap: nowrap;
+
+		@media (max-width: 1200px) {
+			flex-direction: column;	
+			align-items: center;
+		}
+	}
+
+	&__caption {
+		font-family: 'Roboto', sans-serif;
+		color: #2f3f4d;
+		font-size: 36px;
+		font-weight: 400;
+		margin-top: 30px;
+		margin-left: 14px;
+
+			@media (max-width: 1200px) {
+				margin-top: 18px;
+			}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 44px;
+			height: 3px;
+			background-color: #b6cd1b;
+			margin-top: 16px;
+		}
+
+	}
+	
+	&__container {
+		display: inline-block;
+		width: 838px;
+		vertical-align: top;
+		margin: 18px 84px 45px 14px;
+		flex-shrink: 1;
+
+		@media (max-width: 1200px) {
+			max-width: 838px;	
+			min-width: 290px;
+			width: auto;
+			order: 1;	
+			margin: 30px 15px 15px 15px;
+		}
+	}
+
+	&__descript {
+		font-size: 14px;
+		font-family: 'Gotham';
+		font-weight: 400;
+		color: #2f3f4d;
+		display: inline-block;
+		vertical-align: top;
+		line-height: 24px;
+		white-space: pre-wrap;
+
+	}
+
+	&__img {
+		vertical-align: top;
+		width: 250px;
+		height: 237px;
+		display: inline-block;
+
+		&_product {
+			margin-top: 16px;
+			background: url(../img/productivity.png) no-repeat;
+
+				@media (max-width: 1200px) {
+					margin-top: 34px;
+			}
+
+		}
+
+		&_romantic {
+			background: url(../img/romantic.png) no-repeat;
+			margin-left: 4px;	
+		}
+	}
+}
+
+.list {
+	
+	list-style: none;
+	margin-bottom: 44px;
+
+	&__item {
+		border-top: 3px double #b6cd1b;
+		padding-bottom: 46px;
+	}
+
+	&__caption {
+		display: inline-block;
+		font-family: 'Gotham';
+		font-weight: 800;
+		color: #2f3f4d;
+		text-transform: uppercase;
+		vertical-align: 30px;
+		background-color: #fff;
+		padding-right: 20px;
+		font-size: 29px;
+		letter-spacing: 0.4px;
+		padding-left: 12px;
+		margin-top: -17px;
+
+		&_large {
+			@media (max-width: 389px) {
+				width: 220px;
+				margin-top: -40px;
+			}
+		}
+	}
+
+	&__container-large {
+		display: flex;
+		flex-wrap: nowrap;
+
+		@media (max-width: 1200px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__container {
+		margin-right: 77px;
+		display: inline-block;
+		margin-top: -6px;
+
+		@media (max-width: 1200px) {
+			margin-right: 0;
+		}
+
+		&_romance {
+			margin-top: -14px;
+		}
+	}
+
+	&__container-min {
+		padding-left: 33px;
+		margin-top: -4px;
+
+		@media (max-width: 1200px) {
+			margin-top: 11px;
+		}
+
+	}
+
+	&__img {
+		width: 232px;
+		height: 207px;
+
+		&_romance {
+			height: 235px;
+		}	
+
+		&_blue {
+			background: url(../img/dream.png) no-repeat 15px 0;
+		}
+
+		&_jack {
+			background: url(../img/jack.png) no-repeat 3px 0;
+		}
+
+		&_green {
+			background: url(../img/green.png) no-repeat 0 0;
+		}
+
+		&_poison {
+			background: url(../img/poison.png) no-repeat 15px 0;
+		}
+
+		&_harlequin {
+			background: url(../img/harlequin.png) no-repeat 15px 0;
+		}
+		
+		&_sex {
+			background: url(../img/sex.png) no-repeat 15px 0;
+		}
+		
+		&_girl {
+			background: url(../img/girl.png) no-repeat 15px 0;
+		}
+
+		&_bruce {
+			background: url(../img/bruce.png) no-repeat 15px 0;
+		}
+
+		&_super {
+			background: url(../img/super.png) no-repeat 3px 0;
+		}
+
+		&_og {
+			background: url(../img/og.png) no-repeat 15px 0;
+		}
+	}
+
+	&__min-img {
+		display: inline-block;
+		width: 51px;
+		height: 51px;
+		margin-right: 3px;
+		margin-top: 10px;
+		background-size: 51px 51px;
+
+		&_rasp {
+			background-image: url(../img/rasp.png);
+		}
+
+		&_blue2 {
+			background-image: url(../img/blue2.png);
+		}
+
+		&_lolipop {
+			background-image: url(../img/lolipop.png);
+		}
+
+		&_showel {
+			background-image: url(../img/shovel.png);
+		}
+
+		&_spruce {
+			background-image: url(../img/spruce.png);
+		}
+
+		&_jack3 {
+			background-image: url(../img/jack3.png);
+		}
+
+		&_green2 {
+			background-image: url(../img/green2.png);
+		}
+
+		&_harlequin2 {
+			background-image: url(../img/harlequin2.png);
+		}
+
+		&_raccon {
+			background-image: url(../img/raccon.png);
+		}
+
+		&_red {
+			background-image: url(../img/red.png);
+		}
+
+		&_gasoline {
+			background-image: url(../img/gasoline.png);
+		}
+
+		&_citrus {
+			background-image: url(../img/citrus.png);
+		}
+
+		&_herb {
+			background-image: url(../img/herb.png);
+		}
+	}
+
+	&__descript {
+		vertical-align: top;
+		max-width: 878px;
+		min-width: 290px;
+		width: auto;
+		font-size: 14px;
+		font-family: 'Gotham';
+		font-weight: 400;
+		color: #2f3f4d;
+		display: inline-block;
+		line-height: 24px;
+		white-space: pre-wrap;
+
+		@media (max-width: 1200px) {
+			margin: 0 15px 0 15px;
+		}
+
+		&_romance {
+			margin-top: -9px;
+		}
+	}
+}
