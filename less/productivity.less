@@ -8,6 +8,14 @@
 			flex-direction: column;	
 			align-items: center;
 		}
+
+		&_physical {
+			margin-right: -25px;
+
+			@media (max-width: 1200px) {
+				margin-right: 0;
+			}
+		}
 	}
 
 	&__caption {
@@ -47,6 +55,17 @@
 			order: 1;	
 			margin: 30px 15px 15px 15px;
 		}
+
+		&_physical {
+			margin: 18px 92px 45px 14px;
+			box-sizing: border-box;
+
+			@media (max-width: 1200px) {
+				margin-right: 0;
+				margin-left: 0;
+				padding: 0 15px;
+			}
+		}
 	}
 
 	&__descript {
@@ -81,6 +100,11 @@
 			background: url(../img/romantic.png) no-repeat;
 			margin-left: 4px;	
 		}
+
+		&_physical {
+			background: url(../img/physical.png) no-repeat;
+			width: 266px;
+		}
 	}
 }
 
@@ -92,6 +116,10 @@
 	&__item {
 		border-top: 3px double #b6cd1b;
 		padding-bottom: 46px;
+
+		&_physical {
+			padding-bottom: 68px;
+		}
 	}
 
 	&__caption {
@@ -124,6 +152,10 @@
 			flex-direction: column;
 			align-items: center;
 		}
+
+		&_physical {
+			margin-top: -9px;
+		}
 	}
 
 	&__container {
@@ -138,6 +170,10 @@
 		&_romance {
 			margin-top: -14px;
 		}
+
+		&_physical {
+			margin-top: 6px;
+		}
 	}
 
 	&__container-min {
@@ -148,6 +184,10 @@
 			margin-top: 11px;
 		}
 
+		&_physical {
+			margin-top: 5px;
+		}
+
 	}
 
 	&__img {
@@ -155,7 +195,7 @@
 		height: 207px;
 
 		&_romance {
-			height: 235px;
+			height: 212px;
 		}	
 
 		&_blue {
@@ -196,6 +236,31 @@
 
 		&_og {
 			background: url(../img/og.png) no-repeat 15px 0;
+		}
+
+		&_jillybean {
+			background: url(../img/jillybean.png) no-repeat 15px 0;
+			height: 215px;
+		}
+
+		&_casey {
+			background: url(../img/casey.png) no-repeat 11px 0;
+			height: 215px;
+		}
+
+		&_chocolope {
+			background: url(../img/chocolope.png) no-repeat 15px 0;
+			height: 215px;
+		}
+
+		&_acdc {
+			background: url(../img/acdc.png) no-repeat 9px 0;
+			height: 215px;
+		}
+
+		&_tangerine {
+			background: url(../img/tangerine.png) no-repeat 4px 0;
+			height: 215px;
 		}
 	}
 
@@ -257,6 +322,15 @@
 
 		&_herb {
 			background-image: url(../img/herb.png);
+		}
+
+		&_orange {
+			background-image: url(../img/orange.png);
+		}
+
+		&_coffee {
+			background-image: url(../img/coffee.png);
+
 		}
 	}
 

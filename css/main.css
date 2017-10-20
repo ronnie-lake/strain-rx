@@ -797,6 +797,14 @@ a:focus {
             align-items: center;
   }
 }
+.section__info_physical {
+  margin-right: -25px;
+}
+@media (max-width: 1200px) {
+  .section__info_physical {
+    margin-right: 0;
+  }
+}
 .section__caption {
   font-family: 'Roboto', sans-serif;
   color: #2f3f4d;
@@ -835,6 +843,17 @@ a:focus {
     margin: 30px 15px 15px 15px;
   }
 }
+.section__container_physical {
+  margin: 18px 92px 45px 14px;
+  box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+  .section__container_physical {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+}
 .section__descript {
   font-size: 14px;
   font-family: 'Gotham';
@@ -864,6 +883,10 @@ a:focus {
   background: url(../img/romantic.png) no-repeat;
   margin-left: 4px;
 }
+.section__img_physical {
+  background: url(../img/physical.png) no-repeat;
+  width: 266px;
+}
 .list {
   list-style: none;
   margin-bottom: 44px;
@@ -871,6 +894,9 @@ a:focus {
 .list__item {
   border-top: 3px double #b6cd1b;
   padding-bottom: 46px;
+}
+.list__item_physical {
+  padding-bottom: 68px;
 }
 .list__caption {
   display: inline-block;
@@ -906,6 +932,9 @@ a:focus {
             align-items: center;
   }
 }
+.list__container-large_physical {
+  margin-top: -9px;
+}
 .list__container {
   margin-right: 77px;
   display: inline-block;
@@ -919,6 +948,9 @@ a:focus {
 .list__container_romance {
   margin-top: -14px;
 }
+.list__container_physical {
+  margin-top: 6px;
+}
 .list__container-min {
   padding-left: 33px;
   margin-top: -4px;
@@ -928,12 +960,15 @@ a:focus {
     margin-top: 11px;
   }
 }
+.list__container-min_physical {
+  margin-top: 5px;
+}
 .list__img {
   width: 232px;
   height: 207px;
 }
 .list__img_romance {
-  height: 235px;
+  height: 212px;
 }
 .list__img_blue {
   background: url(../img/dream.png) no-repeat 15px 0;
@@ -964,6 +999,26 @@ a:focus {
 }
 .list__img_og {
   background: url(../img/og.png) no-repeat 15px 0;
+}
+.list__img_jillybean {
+  background: url(../img/jillybean.png) no-repeat 15px 0;
+  height: 215px;
+}
+.list__img_casey {
+  background: url(../img/casey.png) no-repeat 11px 0;
+  height: 215px;
+}
+.list__img_chocolope {
+  background: url(../img/chocolope.png) no-repeat 15px 0;
+  height: 215px;
+}
+.list__img_acdc {
+  background: url(../img/acdc.png) no-repeat 9px 0;
+  height: 215px;
+}
+.list__img_tangerine {
+  background: url(../img/tangerine.png) no-repeat 4px 0;
+  height: 215px;
 }
 .list__min-img {
   display: inline-block;
@@ -1011,6 +1066,12 @@ a:focus {
 }
 .list__min-img_herb {
   background-image: url(../img/herb.png);
+}
+.list__min-img_orange {
+  background-image: url(../img/orange.png);
+}
+.list__min-img_coffee {
+  background-image: url(../img/coffee.png);
 }
 .list__descript {
   vertical-align: top;
