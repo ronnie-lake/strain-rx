@@ -854,6 +854,16 @@ a:focus {
     padding: 0 15px;
   }
 }
+.section__container_party {
+  margin: 18px 91px 92px 14px;
+}
+@media (max-width: 1200px) {
+  .section__container_party {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+}
 .section__descript {
   font-size: 14px;
   font-family: 'Gotham';
@@ -886,6 +896,9 @@ a:focus {
 .section__img_physical {
   background: url(../img/physical.png) no-repeat;
   width: 266px;
+}
+.section__img_party {
+  background: url(../img/party.png) no-repeat;
 }
 .list {
   list-style: none;
@@ -1020,6 +1033,22 @@ a:focus {
   background: url(../img/tangerine.png) no-repeat 4px 0;
   height: 215px;
 }
+.list__img_dance {
+  background: url(../img/dance.png) no-repeat 6px 3px;
+}
+.list__img_blueberry {
+  background: url(../img/blueberry.png) no-repeat 16px 3px;
+}
+.list__img_sauce {
+  background: url(../img/sauce.png) no-repeat 16px 3px;
+}
+.list__img_buddha {
+  background: url(../img/buddha.png) no-repeat 10px 0;
+  height: 214px;
+}
+.list__img_willy {
+  background: url(../img/willy.png) no-repeat 13px 3px;
+}
 .list__min-img {
   display: inline-block;
   width: 51px;
@@ -1072,6 +1101,9 @@ a:focus {
 }
 .list__min-img_coffee {
   background-image: url(../img/coffee.png);
+}
+.list__min-img_lime {
+  background-image: url(../img/lime.png);
 }
 .list__descript {
   vertical-align: top;
