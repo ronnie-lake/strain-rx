@@ -81,7 +81,7 @@ a:focus {
   margin-right: 6px;
   width: 25px;
   height: 18px;
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/25/ce/25ce6f62-ce54-4d1b-bdd0-894091d4cd4c/burger.png) no-repeat;
+  background: url(../img/burger.png) no-repeat;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -166,12 +166,12 @@ a:focus {
   min-width: 320px;
 }
 .main__descript {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/2c/08/2c08a0b6-6072-4f97-99db-28273980dc86/header.png) no-repeat;
+  background: url(../img/header.png) no-repeat;
   background-size: 100%;
   background-position: center 65%;
 }
 .main__descript_contacts {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/73/eb/73ebc0bc-0734-4aea-a433-4aea660f1c76/header-cont.png);
+  background-image: url(../img/header-cont.png);
   background-size: cover;
   padding: 117px 0 102px 0;
 }
@@ -250,16 +250,16 @@ a:focus {
   margin: 0 62px;
 }
 .part__logo_work {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/92/30/92302f27-8e6c-44cd-ae6e-95a659504ae3/work.png) no-repeat;
+  background: url(../img/work.png) no-repeat;
 }
 .part__logo_smoking {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/aa/a8/aaa8608d-420a-4d90-ad9b-d52f8fc3e48a/smoking.png) no-repeat;
+  background: url(../img/smoking.png) no-repeat;
 }
 .part__logo_medical {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/82/e0/82e01751-3e0d-4634-8a28-b079256efca9/medical.png) no-repeat;
+  background: url(../img/medical.png) no-repeat;
 }
 .part__logo_side {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/1a/70/1a709b9c-2796-4464-8981-8f7e7511057c/side.png) no-repeat;
+  background: url(../img/side.png) no-repeat;
 }
 .part__caption {
   display: inline-block;
@@ -366,7 +366,7 @@ a:focus {
   }
 }
 .results {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/b2/0a/b20a58fb-d52e-4d95-b087-4850cef46103/results.png) no-repeat;
+  background: url(../img/results.png) no-repeat;
   background-size: cover;
   margin-top: 53px;
   text-align: center;
@@ -715,13 +715,13 @@ a:focus {
   border-right: 1px solid #d5d5d5;
 }
 .touch__label_name:before {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/63/33/6333006d-35c0-4df9-834f-1b5e06eb779b/name.png) no-repeat 5px 6px;
+  background: url(../img/name.png) no-repeat 5px 6px;
 }
 .touch__label_mail:before {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/09/ce/09cefd8b-47d5-44ce-8b41-e6c86a1cb61c/mail.png) no-repeat 5px 7px;
+  background: url(../img/mail.png) no-repeat 5px 7px;
 }
 .touch__label_subject:before {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/70/ef/70ef2528-30d8-4450-b64e-65f4f68bda47/subject.png) no-repeat 8px 4px;
+  background: url(../img/subject.png) no-repeat 8px 4px;
 }
 .touch__label_message {
   margin-left: 12px;
@@ -736,7 +736,7 @@ a:focus {
 .touch__label_message:before {
   top: 10px;
   left: 15px;
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/6c/90/6c9031b6-045c-4ded-800a-6c9db8ef4f59/message.png) no-repeat 1px 6px;
+  background: url(../img/message.png) no-repeat 1px 6px;
 }
 .touch__input {
   box-sizing: border-box;
@@ -882,7 +882,7 @@ a:focus {
 }
 .section__img_product {
   margin-top: 16px;
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/f3/42/f3420179-2902-4f36-b95d-c645fc73d1e9/productivity.png) no-repeat;
+  background: url(../img/productivity.png) no-repeat;
 }
 @media (max-width: 1200px) {
   .section__img_product {
@@ -890,15 +890,15 @@ a:focus {
   }
 }
 .section__img_romantic {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/0d/6e/0d6e4c9d-c3e3-46b5-95e0-e0df72da44d6/romantic.png) no-repeat;
+  background: url(../img/romantic.png) no-repeat;
   margin-left: 4px;
 }
 .section__img_physical {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/a1/64/a1647012-d087-47c3-bb29-102b619dc63b/physical.png) no-repeat;
+  background: url(../img/physical.png) no-repeat;
   width: 266px;
 }
 .section__img_party {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/20/db/20db368d-9c74-46a0-b54a-2d482ff0a4fb/party.png) no-repeat;
+  background: url(../img/party.png) no-repeat;
 }
 .list {
   list-style: none;
@@ -907,6 +907,12 @@ a:focus {
 .list__item {
   border-top: 3px double #b6cd1b;
   padding-bottom: 46px;
+}
+@media (max-width: 1200px) {
+  .list__item {
+    border-color: transparent;
+    text-align: center;
+  }
 }
 .list__item_physical {
   padding-bottom: 68px;
@@ -924,6 +930,11 @@ a:focus {
   letter-spacing: 0.4px;
   padding-left: 12px;
   margin-top: -17px;
+}
+@media (max-width: 1200px) {
+  .list__caption {
+    border-bottom: 3px double #b6cd1b;
+  }
 }
 @media (max-width: 389px) {
   .list__caption_large {
@@ -943,6 +954,7 @@ a:focus {
             flex-direction: column;
     -webkit-box-align: center;
             align-items: center;
+    text-align: left;
   }
 }
 .list__container-large_physical {
@@ -971,6 +983,7 @@ a:focus {
 @media (max-width: 1200px) {
   .list__container-min {
     margin-top: 11px;
+    margin-bottom: 30px;
   }
 }
 .list__container-min_physical {
@@ -984,70 +997,70 @@ a:focus {
   height: 212px;
 }
 .list__img_blue {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/1e/0c/1e0cc7ab-3973-498b-bfbe-41355a0d0f3d/dream.png) no-repeat 15px 0;
+  background: url(../img/dream.png) no-repeat 15px 0;
 }
 .list__img_jack {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/a0/8f/a08f2710-ec81-4802-a24d-683cdbe0aec0/jack.png) no-repeat 3px 0;
+  background: url(../img/jack.png) no-repeat 3px 0;
 }
 .list__img_green {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/64/c2/64c23d3b-2ef9-4e41-a773-193da8be4fd2/green.png) no-repeat 0 0;
+  background: url(../img/green.png) no-repeat 0 0;
 }
 .list__img_poison {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/a2/d9/a2d9c2c2-a76b-41db-af90-130d3b50b06e/poison.png) no-repeat 15px 0;
+  background: url(../img/poison.png) no-repeat 15px 0;
 }
 .list__img_harlequin {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/08/4a/084ac328-5505-43c6-ba58-2907554ea968/harlequin.png) no-repeat 15px 0;
+  background: url(../img/harlequin.png) no-repeat 15px 0;
 }
 .list__img_sex {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/d5/c9/d5c9434c-9dcd-434b-b666-cef018b9d5f9/sex.png) no-repeat 15px 0;
+  background: url(../img/sex.png) no-repeat 15px 0;
 }
 .list__img_girl {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/c4/06/c406593b-3d68-4fe0-8fb5-95c27514320a/girl.png) no-repeat 15px 0;
+  background: url(../img/girl.png) no-repeat 15px 0;
 }
 .list__img_bruce {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/e0/d8/e0d857a1-2c30-452e-8f01-222074cae0c4/bruce.png) no-repeat 15px 0;
+  background: url(../img/bruce.png) no-repeat 15px 0;
 }
 .list__img_super {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/80/f4/80f4daf2-fa26-4bf7-9387-278ff822fff8/super.png) no-repeat 3px 0;
+  background: url(../img/super.png) no-repeat 3px 0;
 }
 .list__img_og {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/2c/06/2c0646ee-8834-4842-bf67-6dd2a819dbf7/og.png) no-repeat 15px 0;
+  background: url(../img/og.png) no-repeat 15px 0;
 }
 .list__img_jillybean {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/9f/e9/9fe90a75-b55a-4f03-bf54-7af01ece98f2/jillybean.png) no-repeat 15px 0;
+  background: url(../img/jillybean.png) no-repeat 15px 0;
   height: 215px;
 }
 .list__img_casey {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/05/75/0575758c-9e2d-43b1-b77d-c112ea0bdd58/casey.png) no-repeat 11px 0;
+  background: url(../img/casey.png) no-repeat 11px 0;
   height: 215px;
 }
 .list__img_chocolope {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/5b/8d/5b8d7ecd-4177-4bab-8b99-f06a8692076c/chocolope.png) no-repeat 15px 0;
+  background: url(../img/chocolope.png) no-repeat 15px 0;
   height: 215px;
 }
 .list__img_acdc {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/5e/a7/5ea74a02-ba23-4618-a8ec-6abbe8d0f8ef/acdc.png) no-repeat 9px 0;
+  background: url(../img/acdc.png) no-repeat 9px 0;
   height: 215px;
 }
 .list__img_tangerine {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/c7/09/c709fb88-bf1d-452d-8bd4-2160b10d911c/tangerine.png) no-repeat 4px 0;
+  background: url(../img/tangerine.png) no-repeat 4px 0;
   height: 215px;
 }
 .list__img_dance {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/75/7a/757a6870-54ca-4bcd-b677-0920803c73cc/dance.png) no-repeat 6px 3px;
+  background: url(../img/dance.png) no-repeat 6px 3px;
 }
 .list__img_blueberry {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/4a/57/4a577b01-3a5e-4a71-8237-11fb48c1a45d/blueberry.png) no-repeat 16px 3px;
+  background: url(../img/blueberry.png) no-repeat 16px 3px;
 }
 .list__img_sauce {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/b2/12/b212b340-b314-489a-96f8-96883112bcc2/sauce.png) no-repeat 16px 3px;
+  background: url(../img/sauce.png) no-repeat 16px 3px;
 }
 .list__img_buddha {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/18/c6/18c6c4fb-78cc-43b4-9224-e482f4896973/buddha.png) no-repeat 10px 0;
+  background: url(../img/buddha.png) no-repeat 10px 0;
   height: 214px;
 }
 .list__img_willy {
-  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/96/01/96015565-64bd-41d7-8ef4-73cdb185a168/willy.png) no-repeat 13px 3px;
+  background: url(../img/willy.png) no-repeat 13px 3px;
 }
 .list__min-img {
   display: inline-block;
@@ -1058,71 +1071,72 @@ a:focus {
   background-size: 51px 51px;
 }
 .list__min-img_rasp {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/10/aa/10aabcdc-b50c-496a-9621-b92802d92ce2/rasp.png);
+  background-image: url(../img/rasp.png);
 }
 .list__min-img_blue2 {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/e8/36/e836f728-86c6-40ce-8176-321fbfce5989/blue2.png);
+  background-image: url(../img/blue2.png);
 }
 .list__min-img_lolipop {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/04/c6/04c603ec-72d8-41cd-a536-cf9290992df6/lolipop.png);
+  background-image: url(../img/lolipop.png);
 }
 .list__min-img_showel {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/f9/33/f9339d41-bc18-4b28-8a74-c35e576152fa/shovel.png);
+  background-image: url(../img/shovel.png);
 }
 .list__min-img_spruce {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/12/63/1263ebf7-9992-4327-bb8d-a1b204d42739/spruce.png);
+  background-image: url(../img/spruce.png);
 }
 .list__min-img_jack3 {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/ce/96/ce968fc6-7e1a-45c9-9a47-9966e50ac24d/jack3.png);
+  background-image: url(../img/jack3.png);
 }
 .list__min-img_green2 {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/2b/59/2b59ca1b-a34f-45d7-bd2c-49bc59b543f1/green2.png);
+  background-image: url(../img/green2.png);
 }
 .list__min-img_harlequin2 {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/e8/f9/e8f9b840-1204-43d9-a7f7-e3d17eb6c065/harlequin2.png);
+  background-image: url(../img/harlequin2.png);
 }
 .list__min-img_raccon {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/86/a7/86a7f53e-0724-40be-bce9-248ca86a37de/raccon.png);
+  background-image: url(../img/raccon.png);
 }
 .list__min-img_red {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/b6/9b/b69b7eb1-1515-4dc2-a47e-93f3f0a2add8/red.png);
+  background-image: url(../img/red.png);
 }
 .list__min-img_gasoline {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/5f/44/5f445e31-b6b8-4387-9b0e-6e4dff82f254/gasoline.png);
+  background-image: url(../img/gasoline.png);
 }
 .list__min-img_citrus {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/14/96/1496319b-fd8f-482b-b75c-524bd23e2897/citrus.png);
+  background-image: url(../img/citrus.png);
 }
 .list__min-img_herb {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/5a/9a/5a9ad69d-197b-4cf1-bdc0-e134b5a26248/herb.png);
+  background-image: url(../img/herb.png);
 }
 .list__min-img_orange {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/71/d0/71d0725c-9d1d-46bb-ae5d-57dbeef6cfc4/orange.png);
+  background-image: url(../img/orange.png);
 }
 .list__min-img_coffee {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/3a/9a/3a9a801c-c6b8-40dd-9ea3-4afd03c9c275/coffee.png);
+  background-image: url(../img/coffee.png);
 }
 .list__min-img_lime {
-  background-image: url(https://s3.amazonaws.com/srx-prod/media/filer_public/fe/1a/fe1aa1fd-8155-4ad9-be29-5dc435ef2089/lime.png);
+  background-image: url(../img/lime.png);
 }
 .list__descript {
+  display: inline-block;
   vertical-align: top;
-  max-width: 878px;
-  min-width: 290px;
-  width: auto;
-  font-size: 14px;
   font-family: 'Gotham';
+  font-size: 14px;
   font-weight: 400;
   color: #2f3f4d;
-  display: inline-block;
   line-height: 24px;
-  white-space: pre-wrap;
 }
 @media (max-width: 1200px) {
   .list__descript {
-    margin: 0 15px 0 15px;
+    margin: 0 15px;
   }
 }
 .list__descript_romance {
   margin-top: -9px;
+}
+@media (max-width: 1200px) {
+  .list__descript_romance {
+    margin-top: 0;
+  }
 }
