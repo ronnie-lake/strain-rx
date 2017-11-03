@@ -1126,3 +1126,96 @@ a:focus {
 .list__descript_romance {
   margin-top: -9px;
 }
+.claim {
+  background: url(../img/claim.png) no-repeat;
+  background-size: cover;
+}
+.claim__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.claim__caption {
+  font-family: 'Gotham';
+  font-weight: 800;
+  font-size: 62px;
+  color: #fff;
+  padding: 81px 0 8px 49px;
+  letter-spacing: -1.5px;
+}
+.claim__descript {
+  width: 638px;
+  color: #fff;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 22px;
+  letter-spacing: -0.8px;
+  line-height: 38px;
+}
+.claim__prices {
+  margin-top: 28px;
+}
+.prices {
+  margin-bottom: 74px;
+}
+.prices__item {
+  width: 201px;
+  border: 1px solid #888383;
+  display: inline-block;
+  margin-right: 35px;
+  vertical-align: top;
+  background-color: #fff;
+}
+.prices__caption {
+  background-color: #5b8e19;
+  border-bottom: 1px solid #888383;
+  margin-bottom: 27px;
+}
+.prices__month {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  padding-bottom: 18px;
+}
+.prices__price {
+  color: #fff;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 48px;
+  padding: 13px 30px 1px 56px;
+}
+.prices__price_free {
+  font-size: 56px;
+  padding: 16px 44px 25px 41px;
+}
+.prices__par {
+  margin: 0 24px 21px 24px;
+  display: block;
+  color: #000;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+.prices__link {
+  display: block;
+  border-top: 1px solid #888383;
+  background-color: #5b8e19;
+  text-align: center;
+  padding: 14px 24px 18px 23px;
+  margin-top: 29px;
+  color: #fff;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #84aa53;
+          text-decoration-color: #84aa53;
+  letter-spacing: -0.4px;
+}
