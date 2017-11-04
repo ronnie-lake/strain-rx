@@ -1219,3 +1219,132 @@ a:focus {
           text-decoration-color: #84aa53;
   letter-spacing: -0.4px;
 }
+.ready {
+  width: 870px;
+  margin: 0 auto;
+}
+.ready__caption {
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 62px;
+  color: #337343;
+  text-align: center;
+  margin: 48px 0 57px 0;
+  letter-spacing: -2px;
+}
+.steps {
+  text-align: center;
+}
+.steps__caption {
+  font-family: 'Gotham';
+  font-weight: 800;
+  font-size: 27px;
+  color: #6c6c6c;
+  letter-spacing: -0.7px;
+}
+.steps__list {
+  text-align: center;
+  list-style: none;
+}
+.steps__item {
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 27px;
+  color: #6c6c6c;
+  letter-spacing: -0.5px;
+  margin-bottom: 1px;
+}
+.form {
+  margin: 81px auto 62px;
+  width: 584px;
+  font-size: 0;
+}
+.form__label {
+  position: relative;
+}
+.form__label:before {
+  position: absolute;
+  content: '(';
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 23px;
+  color: #767474;
+  top: -22px;
+  left: 15px;
+}
+.form__label:after {
+  position: absolute;
+  content: ')';
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 23px;
+  color: #767474;
+  top: -22px;
+  right: 24px;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  border: 1px solid #7e7e7e;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 23px;
+  color: #767474;
+  padding: 9px 0 7px 27px;
+  margin-bottom: 26px;
+  width: 556px;
+}
+.form__input_name {
+  display: inline-block;
+  width: 255px;
+}
+.form__input_name:first-child {
+  margin-right: 16px;
+}
+.form__input_bus {
+  margin-bottom: 37px;
+}
+.form__phone {
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 23px;
+  color: #767474;
+  margin-left: 28px;
+  margin-right: 60px;
+}
+.form__numbers {
+  width: 64px;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 23px;
+  color: #767474;
+  padding: 7px 20px;
+  margin: 5px 12px 43px 0;
+}
+.form__numbers_large {
+  width: 91px;
+  margin-left: -3px;
+}
+.form__button-cont {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.form__button {
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  padding: 22px 68px;
+  background-color: #337343;
+  border: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
