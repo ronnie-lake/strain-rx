@@ -76,6 +76,10 @@
 				padding: 0 15px;
 			}
 		}
+
+		&_movie {
+			margin: 18px 84px 92px 14px;
+		}
 	}
 
 	&__descript {
@@ -119,6 +123,11 @@
 		&_party {
 			background: url(../img/party.png) no-repeat;
 		}
+
+		&_movie {
+			background: url(../img/movie.png) no-repeat;
+			margin-left: 8px;
+		}
 	}
 }
 
@@ -151,11 +160,19 @@
 		margin-top: -17px;
 
 		&_large {
+			@media (max-width: 450px) {
+				width: 300px;
+				margin-top: -40px;
+			}
+		}
+		
+		&_large {
 			@media (max-width: 389px) {
 				width: 220px;
 				margin-top: -40px;
 			}
 		}
+
 	}
 
 	&__container-large {
@@ -187,6 +204,22 @@
 
 		&_physical {
 			margin-top: 6px;
+		}
+
+		&_yoda {
+			margin-right: 86px;
+		}
+
+		&_moon {
+			margin-right: 57px;
+		}
+
+		&_kush {
+			margin-right: 93px;
+		}
+
+		&_arctic {
+			margin-right: 80px;
 		}
 	}
 
@@ -297,6 +330,31 @@
 		&_willy {
 			background: url(../img/willy.png) no-repeat 13px 3px;
 		}
+		
+		&_cinderella {
+			background: url(../img/cinderella.png) no-repeat 0 3px;
+		}
+
+		&_yoda {
+			background: url(../img/yoda.png) no-repeat 0 0;
+			margin-left: -23px;
+			width: 249px;
+		}
+
+		&_moon {
+			background: url(../img/moon.png) no-repeat 2px 4px;
+			width: 255px;
+		}
+
+		&_arctic {
+			background: url(../img/arctic.png) no-repeat 0 1px;
+		}
+
+		&_kush {
+			background: url(../img/kush.png) no-repeat 0 3px;
+			margin-left: -14px;
+		}
+
 
 	}
 
@@ -370,6 +428,14 @@
 
 		&_lime {
 			background-image: url(../img/lime.png);
+		}
+
+		&_branch {
+			background-image: url(../img/branch.png);
+		}
+
+		&_cookie {
+			background-image: url(../img/cookie.png);
 		}
 	}
 
