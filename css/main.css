@@ -915,6 +915,12 @@ a:focus {
   border-top: 3px double #b6cd1b;
   padding-bottom: 46px;
 }
+@media (max-width: 1200px) {
+  .list__item {
+    border-color: transparent;
+    text-align: center;
+  }
+}
 .list__item_physical {
   padding-bottom: 68px;
 }
@@ -931,6 +937,11 @@ a:focus {
   letter-spacing: 0.4px;
   padding-left: 12px;
   margin-top: -17px;
+}
+@media (max-width: 1200px) {
+  .list__caption {
+    border-bottom: 3px double #b6cd1b;
+  }
 }
 @media (max-width: 450px) {
   .list__caption_large {
@@ -956,6 +967,7 @@ a:focus {
             flex-direction: column;
     -webkit-box-align: center;
             align-items: center;
+    text-align: left;
   }
 }
 .list__container-large_physical {
@@ -996,6 +1008,7 @@ a:focus {
 @media (max-width: 1200px) {
   .list__container-min {
     margin-top: 11px;
+    margin-bottom: 30px;
   }
 }
 .list__container-min_physical {
@@ -1156,25 +1169,27 @@ a:focus {
   background-image: url(../img/cookie.png);
 }
 .list__descript {
+  display: inline-block;
   vertical-align: top;
-  max-width: 878px;
-  min-width: 290px;
-  width: auto;
-  font-size: 14px;
   font-family: 'Gotham';
+  font-size: 14px;
   font-weight: 400;
   color: #2f3f4d;
-  display: inline-block;
   line-height: 24px;
-  white-space: pre-wrap;
+  text-indent: 10px;
 }
 @media (max-width: 1200px) {
   .list__descript {
-    margin: 0 15px 0 15px;
+    margin: 0 15px;
   }
 }
 .list__descript_romance {
   margin-top: -9px;
+}
+@media (max-width: 1200px) {
+  .list__descript_romance {
+    margin-top: 0;
+  }
 }
 .claim {
   background: url(../img/claim.png) no-repeat;

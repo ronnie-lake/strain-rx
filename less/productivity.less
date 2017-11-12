@@ -140,6 +140,11 @@
 		border-top: 3px double #b6cd1b;
 		padding-bottom: 46px;
 
+		@media (max-width: 1200px) {
+			border-color: transparent;
+			text-align: center;
+		}
+
 		&_physical {
 			padding-bottom: 68px;
 		}
@@ -158,6 +163,10 @@
 		letter-spacing: 0.4px;
 		padding-left: 12px;
 		margin-top: -17px;
+
+		@media (max-width: 1200px) {
+			border-bottom: 3px double #b6cd1b;
+		}
 
 		&_large {
 			@media (max-width: 450px) {
@@ -182,6 +191,7 @@
 		@media (max-width: 1200px) {
 			flex-direction: column;
 			align-items: center;
+			text-align: left;
 		}
 
 		&_physical {
@@ -229,6 +239,7 @@
 
 		@media (max-width: 1200px) {
 			margin-top: 11px;
+			margin-bottom: 30px;
 		}
 
 		&_physical {
@@ -440,24 +451,25 @@
 	}
 
 	&__descript {
+		display: inline-block;
 		vertical-align: top;
-		max-width: 878px;
-		min-width: 290px;
-		width: auto;
-		font-size: 14px;
 		font-family: 'Gotham';
+		font-size: 14px;
 		font-weight: 400;
 		color: #2f3f4d;
-		display: inline-block;
 		line-height: 24px;
-		white-space: pre-wrap;
+		text-indent: 10px;
 
 		@media (max-width: 1200px) {
-			margin: 0 15px 0 15px;
+			margin: 0 15px;
 		}
 
 		&_romance {
 			margin-top: -9px;
+
+			@media (max-width: 1200px) {
+				margin-top: 0;
+			}
 		}
 	}
 }
