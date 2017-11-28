@@ -15,11 +15,15 @@ a:focus {
   text-decoration: none;
 }
 .container {
-  margin: 0 auto;
   width: 1140px;
+  margin: 0 auto;
 }
 .container_large {
   width: 1195px;
+}
+.container_xlarge {
+  width: 1510px;
+  margin: 0 auto;
 }
 .container:before,
 .container:after {
@@ -1320,7 +1324,7 @@ a:focus {
   margin-bottom: 1px;
 }
 .form {
-  margin: 81px auto 62гpx;
+  margin: 81px auto 62px;
   width: 584px;
   font-size: 0;
 }
@@ -1412,4 +1416,126 @@ a:focus {
           align-items: center;
   -webkit-box-pack: center;
           justify-content: center;
+}
+.guide {
+  position: relative;
+}
+.guide:before {
+  content: '';
+  display: block;
+  width: 745px;
+  height: 449px;
+  background: url(../img/left-cannabis.png);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.guide:after {
+  content: '';
+  display: block;
+  width: 745px;
+  height: 449px;
+  background: url(../img/right-cannabis.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.guide__descript {
+  position: relative;
+  padding: 58px 0 242px;
+  text-align: center;
+  overflow: hidden;
+}
+.guide__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.guide__caption {
+  margin: 0;
+  font-family: 'Gotham';
+  font-size: 80px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 35px;
+  letter-spacing: -2px;
+}
+.guide__text {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 31px;
+  font-weight: 400;
+  color: #fff;
+}
+.guide__text:before {
+  content: '';
+  display: inline-block;
+  width: 121px;
+  height: 1px;
+  background-color: #fff;
+  margin-right: 22px;
+  margin-bottom: 9px;
+}
+.guide__text:after {
+  content: '';
+  display: inline-block;
+  width: 121px;
+  height: 1px;
+  background-color: #fff;
+  margin-left: 22px;
+  margin-bottom: 9px;
+}
+.guide__container {
+  margin-top: -196px;
+  text-align: center;
+  position: relative;
+  height: 1172px;
+}
+.guidelist {
+  list-style: none;
+}
+.guidelist__item {
+  position: absolute;
+  width: 285px;
+}
+.guidelist__item_productivity {
+  left: 18px;
+  top: 27px;
+}
+.guidelist__item_romantic {
+  right: 18px;
+  top: 27px;
+}
+.guidelist__item_party {
+  left: 307px;
+  top: 351px;
+}
+.guidelist__item_movie {
+  right: 307px;
+  top: 351px;
+}
+.guidelist__item_physical {
+  top: 640px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.guidelist__itemimg {
+  margin-bottom: 16px;
+}
+.guidelist__name {
+  font-family: 'Gotham';
+  font-size: 31px;
+  font-weight: 400;
+  color: #7d7d7d;
+  margin-bottom: 27px;
+}
+.guidelist__descript {
+  font-family: 'Gotham';
+  font-size: 24px;
+  font-weight: 400;
+  color: #7d7d7d;
+  line-height: 19px;
 }
