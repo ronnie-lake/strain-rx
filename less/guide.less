@@ -7,10 +7,14 @@
 		display: block;
 		width: 745px;
 		height: 449px;
-		background: url(../img/left-cannabis.png);
+		background: url(../img/left-cannabis.png) no-repeat;
 		position: absolute;
 		left: 0;
 		bottom: 0;
+
+		@media (max-width: 1500px) {
+			display: none;
+		}
 	}
 
 	&:after {
@@ -18,10 +22,15 @@
 		display: block;
 		width: 745px;
 		height: 449px;
-		background: url(../img/right-cannabis.png);
+		background: url(../img/right-cannabis.png) no-repeat;
 		position: absolute;
 		right: 0;
 		bottom: 0;
+
+		@media (max-width: 1500px) {
+			background-size: 42% 42%;
+			background-position: bottom right;
+		}
 	}
 
 	&__descript {
@@ -29,6 +38,12 @@
 		padding: 58px 0 242px;
 		text-align: center;
 		overflow: hidden;
+
+
+		@media (max-width: 768px) {
+			padding: 34px 0 218px;
+			
+		}
 	}
 
 	&__img {
@@ -37,6 +52,13 @@
 		left: 0;
 		z-index: -1;
 		width: 100%;
+
+		@media (max-width: 768px) {
+			height: 100%;
+			width: auto;
+			left: 50%;
+			transform: translate(-50%);
+		}
 	}
 
 	&__caption {
@@ -47,6 +69,11 @@
 		color: #fff;
 		margin-bottom: 35px;
 		letter-spacing: -2px;
+
+		@media (max-width: 900px) {
+				font-size: 48px;
+				line-height: 72px;
+			}
 	}
 
 	&__text {
@@ -56,6 +83,12 @@
 		font-weight: 400;
 		color: #fff;
 
+		@media (max-width: 900px) {
+				font-size: 31px;
+				margin: 0 33px;
+				line-height: 37px;
+			}
+				
 		&:before {
 			content: '';
 			display: inline-block;
@@ -64,6 +97,10 @@
 			background-color: #fff;
 			margin-right: 22px;
 			margin-bottom: 9px;
+
+			@media (max-width: 1140px) {
+				display: none;
+			}
 		}
 
 		&:after {
@@ -74,18 +111,31 @@
 			background-color: #fff;
 			margin-left: 22px;
 			margin-bottom: 9px;
+
+			@media (max-width: 1140px) {
+				display: none;
+			}
 		}
 	}
 
 	&__container {
-		margin-top: -196px;
+		margin-top: -161px;
 		text-align: center;
 		position: relative;
 		height: 1172px;
+
+		@media (max-width: 1500px) {
+			margin-bottom: 110px;
+			height: 2847px;
+		}
 	}
 
 	&__compas {
 
+		@media (max-width: 1500px) {
+			margin-bottom: 114px;
+			width: 360px;
+		}
 	}
 
 	&__guidelist {
@@ -100,6 +150,12 @@
 	&__item {
 		position: absolute;
 		width: 285px;
+
+		@media (max-width: 1500px) {
+			position: static;
+			margin: 0 auto;
+			margin-bottom: 39px;
+		}
 
 		&_productivity {
 			left: 18px;
@@ -125,6 +181,11 @@
 			top: 640px;
 			left: 50%;
 			transform:translate(-50%);
+
+			@media (max-width: 1500px) {
+				transform:translate(0);
+			}
+
 		}
 	}
 

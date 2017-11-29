@@ -23,7 +23,6 @@ a:focus {
 }
 .container_xlarge {
   width: 1510px;
-  margin: 0 auto;
 }
 .container:before,
 .container:after {
@@ -1425,20 +1424,31 @@ a:focus {
   display: block;
   width: 745px;
   height: 449px;
-  background: url(../img/left-cannabis.png);
+  background: url(../img/left-cannabis.png) no-repeat;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+@media (max-width: 1500px) {
+  .guide:before {
+    display: none;
+  }
 }
 .guide:after {
   content: '';
   display: block;
   width: 745px;
   height: 449px;
-  background: url(../img/right-cannabis.png);
+  background: url(../img/right-cannabis.png) no-repeat;
   position: absolute;
   right: 0;
   bottom: 0;
+}
+@media (max-width: 1500px) {
+  .guide:after {
+    background-size: 42% 42%;
+    background-position: bottom right;
+  }
 }
 .guide__descript {
   position: relative;
@@ -1446,12 +1456,26 @@ a:focus {
   text-align: center;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .guide__descript {
+    padding: 34px 0 218px;
+  }
+}
 .guide__img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .guide__img {
+    height: 100%;
+    width: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
 }
 .guide__caption {
   margin: 0;
@@ -1462,12 +1486,25 @@ a:focus {
   margin-bottom: 35px;
   letter-spacing: -2px;
 }
+@media (max-width: 900px) {
+  .guide__caption {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
 .guide__text {
   display: inline-block;
   font-family: 'Gotham';
   font-size: 31px;
   font-weight: 400;
   color: #fff;
+}
+@media (max-width: 900px) {
+  .guide__text {
+    font-size: 31px;
+    margin: 0 33px;
+    line-height: 37px;
+  }
 }
 .guide__text:before {
   content: '';
@@ -1478,6 +1515,11 @@ a:focus {
   margin-right: 22px;
   margin-bottom: 9px;
 }
+@media (max-width: 1140px) {
+  .guide__text:before {
+    display: none;
+  }
+}
 .guide__text:after {
   content: '';
   display: inline-block;
@@ -1487,11 +1529,28 @@ a:focus {
   margin-left: 22px;
   margin-bottom: 9px;
 }
+@media (max-width: 1140px) {
+  .guide__text:after {
+    display: none;
+  }
+}
 .guide__container {
-  margin-top: -196px;
+  margin-top: -161px;
   text-align: center;
   position: relative;
   height: 1172px;
+}
+@media (max-width: 1500px) {
+  .guide__container {
+    margin-bottom: 110px;
+    height: 2847px;
+  }
+}
+@media (max-width: 1500px) {
+  .guide__compas {
+    margin-bottom: 114px;
+    width: 360px;
+  }
 }
 .guidelist {
   list-style: none;
@@ -1499,6 +1558,13 @@ a:focus {
 .guidelist__item {
   position: absolute;
   width: 285px;
+}
+@media (max-width: 1500px) {
+  .guidelist__item {
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
 }
 .guidelist__item_productivity {
   left: 18px;
@@ -1521,6 +1587,12 @@ a:focus {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+@media (max-width: 1500px) {
+  .guidelist__item_physical {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 .guidelist__itemimg {
   margin-bottom: 16px;
