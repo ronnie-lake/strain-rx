@@ -21,9 +21,6 @@ a:focus {
 .container_large {
   width: 1195px;
 }
-.container_xlarge {
-  width: 1510px;
-}
 .container:before,
 .container:after {
   display: table;
@@ -1422,14 +1419,14 @@ a:focus {
 .guide:before {
   content: '';
   display: block;
-  width: 745px;
-  height: 449px;
-  background: url(../img/left-cannabis.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url(../img/left-cannabis.png) left bottom no-repeat;
   position: absolute;
   left: 0;
   bottom: 0;
 }
-@media (max-width: 1500px) {
+@media (max-width: 992px) {
   .guide:before {
     display: none;
   }
@@ -1437,28 +1434,22 @@ a:focus {
 .guide:after {
   content: '';
   display: block;
-  width: 745px;
-  height: 449px;
-  background: url(../img/right-cannabis.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url(../img/right-cannabis.png) right bottom no-repeat;
   position: absolute;
   right: 0;
   bottom: 0;
 }
-@media (max-width: 1500px) {
-  .guide:after {
-    background-size: 42% 42%;
-    background-position: bottom right;
-  }
-}
 .guide__descript {
   position: relative;
-  padding: 58px 0 242px;
+  padding: 34px 0 140px;
   text-align: center;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .guide__descript {
-    padding: 34px 0 218px;
+    padding: 34px 34px 217px;
   }
 }
 .guide__img {
@@ -1468,7 +1459,7 @@ a:focus {
   z-index: -1;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .guide__img {
     height: 100%;
     width: auto;
@@ -1480,76 +1471,92 @@ a:focus {
 .guide__caption {
   margin: 0;
   font-family: 'Gotham';
-  font-size: 80px;
+  font-size: 49px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 35px;
-  letter-spacing: -2px;
+  margin-bottom: 15px;
+  letter-spacing: -1.3px;
 }
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .guide__caption {
     font-size: 48px;
-    line-height: 72px;
+    line-height: 48px;
+    margin-bottom: 48px;
   }
 }
 .guide__text {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 620px;
   font-family: 'Gotham';
-  font-size: 31px;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 37px;
   color: #fff;
+  letter-spacing: -0.05px;
 }
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .guide__text {
     font-size: 31px;
-    margin: 0 33px;
-    line-height: 37px;
+    width: auto;
   }
 }
 .guide__text:before {
   content: '';
+  -webkit-box-flex: 1;
+          flex-grow: 1;
   display: inline-block;
-  width: 121px;
-  height: 1px;
+  height: 4px;
   background-color: #fff;
-  margin-right: 22px;
-  margin-bottom: 9px;
+  margin-right: 11px;
 }
-@media (max-width: 1140px) {
+@media (max-width: 992px) {
   .guide__text:before {
     display: none;
   }
 }
 .guide__text:after {
   content: '';
+  -webkit-box-flex: 1;
+          flex-grow: 1;
   display: inline-block;
-  width: 121px;
-  height: 1px;
+  height: 4px;
   background-color: #fff;
-  margin-left: 22px;
-  margin-bottom: 9px;
+  margin-left: 5px;
 }
-@media (max-width: 1140px) {
+@media (max-width: 992px) {
   .guide__text:after {
     display: none;
   }
 }
 .guide__container {
-  margin-top: -161px;
+  margin-top: -121px;
   text-align: center;
   position: relative;
-  height: 1172px;
+  min-height: 714px;
 }
-@media (max-width: 1500px) {
+@media (max-width: 992px) {
   .guide__container {
-    margin-bottom: 110px;
-    height: 2847px;
+    margin-top: -161px;
+    padding-bottom: 207px;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 992px) {
   .guide__compas {
-    margin-bottom: 114px;
-    width: 360px;
+    display: none;
+  }
+}
+.guide__compas-adapt {
+  display: none;
+}
+@media (max-width: 992px) {
+  .guide__compas-adapt {
+    display: inline-block;
+    margin-bottom: 113px;
   }
 }
 .guidelist {
@@ -1557,57 +1564,132 @@ a:focus {
 }
 .guidelist__item {
   position: absolute;
-  width: 285px;
+  width: 175px;
 }
-@media (max-width: 1500px) {
+@media (max-width: 992px) {
   .guidelist__item {
     position: static;
     margin: 0 auto;
-    margin-bottom: 39px;
+    margin-bottom: 53px;
+    width: 285px;
   }
 }
 .guidelist__item_productivity {
-  left: 18px;
-  top: 27px;
+  left: 112px;
+  top: 17px;
+}
+@media (max-width: 1200px) {
+  .guidelist__item_productivity {
+    left: 24px;
+  }
+}
+.guidelist__item_productivity .guidelist__itemimg {
+  margin-left: -7px;
+}
+@media (max-width: 992px) {
+  .guidelist__item_productivity .guidelist__itemimg {
+    margin-left: -19px;
+  }
 }
 .guidelist__item_romantic {
-  right: 18px;
-  top: 27px;
+  right: 107px;
+  top: 16px;
+}
+@media (max-width: 1200px) {
+  .guidelist__item_romantic {
+    right: 15px;
+  }
+}
+.guidelist__item_romantic .guidelist__itemimg {
+  margin-left: -4px;
+}
+@media (max-width: 992px) {
+  .guidelist__item_romantic .guidelist__itemimg {
+    margin-right: -2px;
+  }
 }
 .guidelist__item_party {
-  left: 307px;
-  top: 351px;
+  left: 302px;
+  top: 214px;
+}
+@media (max-width: 1200px) {
+  .guidelist__item_party {
+    left: 212px;
+  }
+}
+.guidelist__item_party .guidelist__itemimg {
+  margin-left: -11px;
+}
+@media (max-width: 992px) {
+  .guidelist__item_party .guidelist__itemimg {
+    margin-left: -26px;
+  }
 }
 .guidelist__item_movie {
-  right: 307px;
-  top: 351px;
+  right: 286px;
+  top: 214px;
+}
+@media (max-width: 1200px) {
+  .guidelist__item_movie {
+    right: 194px;
+  }
+}
+.guidelist__item_movie .guidelist__itemimg {
+  margin-left: -20px;
 }
 .guidelist__item_physical {
-  top: 640px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  top: 392px;
+  left: 487px;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
   .guidelist__item_physical {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    left: 399px;
+  }
+}
+.guidelist__item_physical .guidelist__itemimg {
+  margin-left: -19px;
+}
+@media (max-width: 992px) {
+  .guidelist__item_physical .guidelist__itemimg {
+    margin-left: -31px;
   }
 }
 .guidelist__itemimg {
-  margin-bottom: 16px;
+  display: inline-block;
+  width: 152px;
+}
+@media (max-width: 992px) {
+  .guidelist__itemimg {
+    width: 90%;
+  }
 }
 .guidelist__name {
   font-family: 'Gotham';
-  font-size: 31px;
+  font-size: 19px;
+  line-height: 37px;
   font-weight: 400;
   color: #7d7d7d;
-  margin-bottom: 27px;
+  margin-bottom: 5px;
+  letter-spacing: -0.6px;
+}
+@media (max-width: 992px) {
+  .guidelist__name {
+    margin-bottom: 10px;
+    font-size: 31px;
+    line-height: 61px;
+  }
 }
 .guidelist__descript {
   font-family: 'Gotham';
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 100;
   color: #7d7d7d;
-  line-height: 19px;
+  line-height: 18px;
+  letter-spacing: -0.4px;
+}
+@media (max-width: 992px) {
+  .guidelist__descript {
+    font-size: 24px;
+    line-height: normal;
+  }
 }

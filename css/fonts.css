@@ -47,3 +47,11 @@
 	font-weight: 800;
 	font-style: normal;
 }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Thin.otf')  format('opentype'),
+	     url('../fonts/Gotham-Thin.woff') format('woff'), url('Gotham-Thin.ttf')  format('truetype'), url('../fonts/Gotham-Thin.svg#Gotham-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
