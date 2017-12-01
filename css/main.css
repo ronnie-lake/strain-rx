@@ -1664,17 +1664,24 @@ a:focus {
   }
 }
 .guidelist__name {
+  margin-bottom: 5px;
+}
+@media (max-width: 992px) {
+  .guidelist__name {
+    margin-bottom: 10px;
+  }
+}
+.guidelist__link {
   font-family: 'Gotham';
   font-size: 19px;
   line-height: 37px;
   font-weight: 400;
   color: #7d7d7d;
-  margin-bottom: 5px;
+  text-decoration: none;
   letter-spacing: -0.6px;
 }
 @media (max-width: 992px) {
-  .guidelist__name {
-    margin-bottom: 10px;
+  .guidelist__link {
     font-size: 31px;
     line-height: 61px;
   }
