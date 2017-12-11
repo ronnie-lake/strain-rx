@@ -27,32 +27,96 @@
         font-weight: 800;
         font-style: normal;
       }
+
+      p {
+        margin:  0;
+      }
+      table {
+        width:  850px;
+      }
+      p[class="header"] img {
+        width:  307px;
+        margin: -5px 0 -11px -6px; 
+      }
+      p[class="client"] {
+        text-transform:  uppercase;
+        font-weight: 100;
+      }
+      td[class="title"] {
+        padding-top: 5px;
+        padding-right: 14px;
+      }
+      td[class="subtitle"] {
+        line-height: 33px;
+        font-weight: 800;
+      }
+      div {
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: 480px) {
+        table {
+          width: auto;
+        }
+        p[class="header"] {
+          background-color: #2f3f4c;
+        }
+        p[class="header"] img {
+          width:  369px;
+          margin-bottom:  4px;
+        }
+        p[class="client"] {
+          margin-top:  3px;
+        }
+        td[class="title"] {
+          padding-top: 13px;
+          padding-right: 0;
+        }
+        td[class="title"] p {
+          width:  290px;
+          line-height: 25px;
+        }
+        td[class="subtitle"] {
+          line-height: 21px;
+          font-weight: 400;
+        }
+        div {
+          display: block;
+        }
+        tr {
+          width:  290px;
+        }
+        p[class="dont-know"] {
+          width:  210px;
+        }
+      }
   </style>
 <!--<![endif]-->
 </head>
-<body>
-  <table cellpadding="0"," cellspacing="0"," border="0" width="850" style="background: #ffffff url('img/Layer-9.jpg') no-repeat; background-position: 0 78px; background-size: 100% 514px; font-family: 'Gotham'">
+<body style="margin: 0; padding: 0;">
+  <table cellpadding="0"," cellspacing="0"," border="0" style="background: #ffffff url('img/Layer-9.jpg') no-repeat; background-position: 0 78px; background-size: 100% 514px; font-family: 'Gotham'">
     <tbody>
       <tr style='background-color: #fff;'>
         <td colspan="5">
-          <p style="width: 850px; text-align: center; margin: 0">
-            <img src="https://s3.amazonaws.com:443/srx-prod/static/images/logo_hr.b6cd6d08fabe.png" style="display: inline-block; margin: -5px 0 -11px -6px; height: 91px; width: 307px;">
+          <p class="header" style="text-align: center; margin: 0">
+            <img src="https://s3.amazonaws.com:443/srx-prod/static/images/logo_hr.b6cd6d08fabe.png" style="display: inline-block; height: 91px;">
           </p>
         </td>
       </tr>
       <tr>
-        <td colspan="5" style="font-size: 36px; color: #ffffff; padding: 20px 3px 0 0;"><center>Dear Tom,</center></td>
+        <td colspan="5" style="font-size: 36px; color: #ffffff; padding: 20px 3px 0 0;"><center><p class="client">Dear Tom,</p></center></td>
       </tr>
       <tr>
         <td colspan="5"><center><p style="width: 43px; height: 3px; background-color: #b6cd1b; margin: 12px 4px 0 0;"></p></center></td>
       </tr>
       <tr>
-        <td colspan="5" style="font-size: 24px; line-height: 33px; color: #ffffff; padding-top: 5px; padding-right: 14px;">
-          <center>StrainRx is proud to announce a powerful new feature -</center>
+        <td class="title" colspan="5" style="font-size: 24px; line-height: 33px; color: #ffffff;">
+          <center><p>StrainRx is proud to announce a powerful new feature -</p></center>
         </td>
       </tr>
-      <tr style="font-size: 24px; line-height: 33px; color: #ffffff; font-weight: 800">
-        <td colspan="5" style="padding-right: 13px;"><center>Dispensary Look-Up!</center></td>
+      <tr style="font-size: 24px; color: #ffffff;">
+        <td class="subtitle" colspan="5" style="padding-right: 13px;"><center><p>Dispensary Look-Up!</p></center></td>
       </tr>
       <tr>
         <td colspan="5" style="padding-top: 2px; padding-right: 3px;">
@@ -75,46 +139,48 @@
         </td>
       </tr>
       <tr>
-        <td colspan="5" style="font-size: 30px; color: #31963a; padding: 0 10px 4px 0;"><center>Don't know what strains to try?</center></td>
+        <td colspan="5" style="font-size: 30px; color: #31963a; padding: 0 10px 4px 0;"><center><p class="dont-know">Don't know what strains to try?</p></center></td>
       </tr>
       <tr>
         <td colspan="5" style="font-size: 30px; color: #44525e; padding-bottom: 30px;"><center>We put together some recommendations:</center></td>
       </tr>
-      <tr>
-        <td style="padding-left: 35px;">
-          <center>
-            <img src="img/work-done.jpg" alt="">
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 18px 18px 0 0;">GET</p>
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-right: 13px;">WORK DONE</p>
-          </center>
-        </td>
-        <td style="padding-left: 12px;">
-          <center>
-            <img src="img/party.jpg" alt="">
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-top: 18px;">GO OUT</p>
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0">AND PARTY</p>
-          </center>
-        </td>
-        <td style="padding-left: 17px;">
-          <center>
-            <img src="img/physical.jpg" alt="">
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 17px 18px 0 0;">PHYSICAL</p>
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-right: 12px;">ACTIVITY</p>
-          </center>
-        </td>
-        <td style="padding-left: 13px;">
-          <center>
-            <img src="img/movies.jpg" alt="">
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 18px 0 0 3px;">WATCH</p>
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-left: 6px;">MOVIES</p>
-          </center>
-        </td>
-        <td style="padding-left: 22px;">
-          <center>
-            <img src="img/romantic.jpg" alt="">
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-top: 17px;">GET</p>
-            <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-left: 4px;">ROMANTIC</p>
-          </center>
+      <tr style="font-size: 0">
+        <td>
+          <div style="padding-left: 35px; width: 144px;">
+            <center>
+              <img src="img/work-done.jpg" alt="">
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 18px 18px 0 0;">GET</p>
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-right: 13px;">WORK DONE</p>
+            </center>
+          </div>
+          <div style="padding-left: 12px; width: 141px;">
+            <center>
+              <img src="img/party.jpg" alt="">
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-top: 18px;">GO OUT</p>
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0">AND PARTY</p>
+            </center>
+          </div>
+          <div style="padding-left: 17px; width: 167px;">
+            <center>
+              <img src="img/physical.jpg" alt="">
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 17px 18px 0 0;">PHYSICAL</p>
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-right: 12px;">ACTIVITY</p>
+            </center>
+          </div>
+          <div style="padding-left: 13px; width: 144px;">
+            <center>
+              <img src="img/movies.jpg" alt="">
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 18px 0 0 3px;">WATCH</p>
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-left: 6px;">MOVIES</p>
+            </center>
+          </div>
+          <div style="padding-left: 22px; width: 152px;">
+            <center>
+              <img src="img/romantic.jpg" alt="">
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-top: 17px;">GET</p>
+              <p style="font-size: 16px;  font-weight: 800; color: #3d4c59; margin: 0; margin-left: 4px;">ROMANTIC</p>
+            </center>
+          </div>
         </td>
       </tr>
       <tr>

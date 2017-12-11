@@ -13,13 +13,10 @@ a:focus {
 .container {
 	width: 1140px;
 	margin: 0 auto;
+	position: relative;
 
 	&_large {
 		width: 1195px;
-	}
-
-	&_xlarge {
-		width: 1510px;
 	}
 
 	&:before,
@@ -611,6 +608,48 @@ a:focus {
 			margin-top: 0;
 			padding-top: 4px;
 		}
+	}
+}
+
+.breadcrumbs {
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 10px;
+
+			&:after {
+				content: '>';
+				margin-left: 10px;
+				font-family: 'Gotham';
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 1;
+				color: #7d7d7d;
+			}
+		}
+	}
+
+	&__link {
+		font-family: 'Gotham';
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 1;
+		color: #10b3dc;
+		white-space: nowrap;
+	}
+
+	&__text {
+		font-family: 'Gotham';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1;
+		color: #7d7d7d;
+		white-space: nowrap;
 	}
 }
 
