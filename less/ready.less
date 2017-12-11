@@ -3,6 +3,18 @@
 	width: 870px;
 	margin: 0 auto;
 
+		@media (max-width: 992px) {
+			width: 720px
+		}
+
+		@media (max-width: 768px) {
+			width: 540px;
+		}
+
+		@media (max-width: 576px) {
+			width: 290px;
+		}
+
 	&__caption {
 		font-family: 'Gotham';
 		font-weight: 400;
@@ -11,6 +23,11 @@
 		text-align: center;
 		margin: 48px 0 57px 0;
 		letter-spacing: -2px;
+
+		@media (max-width: 768px) {
+			margin: 21px 0 35px 0;
+			line-height: 73px;
+		}
 	}
 
 	&__steps {
@@ -24,6 +41,10 @@
 .steps {
 
 	text-align: center;
+
+	@media (max-width: 768px) {
+		line-height: 32px;
+	}
 
 	&__caption {
 		font-family: 'Gotham';
@@ -54,6 +75,11 @@
 	width: 584px;
 	font-size: 0;
 
+	@media (max-width: 768px) {
+		width: 290px;
+		margin: 38px auto 20px ;
+	}
+
 	&__label {
 
 		position: relative;
@@ -67,6 +93,10 @@
 			color: #767474;
 			top: -22px;
 			left: 15px;
+
+			@media (max-width: 768px) {
+				left: 6px;
+			}
 		}
 
 		&:after {
@@ -78,6 +108,10 @@
 			color: #767474;
 			top: -22px;
 			right: 24px;
+
+			@media (max-width: 768px) {
+				right: 9px;
+			}
 		}
 	}
 
@@ -93,17 +127,42 @@
 		margin-bottom: 26px;
 		width: 556px;
 
+		@media (max-width: 768px) {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 28px;
+		}
+
 		&_name {
 			display: inline-block;
 			width: 255px;
 
+			@media (max-width: 768px) {
+				width: 100%;			}
+
 			&:first-child {
 				margin-right: 16px;
+
+				@media (max-width: 768px) {
+					margin-right: 0;
+				}
 			}
 		}
 
 		&_bus {
 			margin-bottom: 37px;
+
+			@media (max-width: 768px) {
+				margin-bottom: 24px;
+			}
+		}
+
+		&_address {
+
+			@media (max-width: 768px) {
+				margin-bottom: 20px;
+			}
 		}
 	}
 
@@ -114,6 +173,12 @@
 		color: #767474;
 		margin-left: 28px;
 		margin-right: 60px;
+
+		@media (max-width: 768px) {
+			display: block;
+			margin-left: 0;
+			margin-top: -7px;
+		}
 	}
 
 	&__numbers {
@@ -125,9 +190,21 @@
 		padding: 7px 20px;
 		margin: 5px 12px 43px 0;
 
+		@media (max-width: 768px) {
+			width: 92px;
+			margin-right: 3px;
+			box-sizing: border-box;
+			margin: 14px 4px 26px 0;
+		}
+
 		&_large {
 			width: 91px;
 			margin-left: -3px;
+
+			@media (max-width: 768px) {
+				width: 92px;
+				margin-left: 0;
+			}
 		}
 	}
 
@@ -135,6 +212,10 @@
 		margin-top: 48px;
 		display: flex;
 		justify-content: center;
+
+		@media (max-width: 768px) {
+			margin-top: 24px;
+		}
 	}
 
 	&__button {
@@ -149,5 +230,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@media (max-width: 768px) {
+			padding: 20px 101px 23px;
+		}
 	}
 }
