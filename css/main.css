@@ -1233,6 +1233,7 @@ a:focus {
 .claim__container {
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 74px;
 }
 @media (max-width: 1220px) {
   .claim__container {
@@ -1247,6 +1248,7 @@ a:focus {
 @media (max-width: 768px) {
   .claim__container {
     width: 540px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 576px) {
@@ -1291,7 +1293,6 @@ a:focus {
 }
 .claim__prices {
   margin-top: 28px;
-  margin-bottom: 74px;
 }
 @media (max-width: 992px) {
   .claim__prices {
@@ -1307,7 +1308,7 @@ a:focus {
 @media (max-width: 768px) {
   .claim__prices {
     display: block;
-    margin: 39px 0 40px 0;
+    margin-top: 39px;
   }
 }
 .prices__item {
