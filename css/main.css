@@ -1227,7 +1227,7 @@ a:focus {
   }
 }
 .claim {
-  background: url(../img/claim.png) no-repeat;
+  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/7a/5a/7a5aaf72-3d7f-4dad-9f35-98509714ccb7/claim.png) no-repeat;
   background-size: cover;
 }
 .claim__container {
