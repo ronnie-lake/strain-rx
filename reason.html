@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	 <style type="text/css">
+      @font-face {
+        font-family: 'Gotham';
+        src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+        src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/23/b3/23b3f7fc-bdfd-48d3-a07b-bab94f6f35ae/hinted-gotham-book.eot?#iefix') format('embedded-opentype'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/1d/f2/1df24a6a-9178-4957-b406-ce998abd2893/hinted-gotham-book.woff2') format('woff2'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/28/ed/28ed3d3c-653d-4623-a0d9-454fea9c375a/hinted-gotham-book.woff') format('woff'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2d/f4/2df42930-21e1-4c3f-82f7-f71c92969d93/hinted-gotham-book.ttf') format('truetype'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d4/bf/d4bfb1bb-f111-4a7a-b2f9-94d00ba49581/hinted-gotham-book.svg#Gotham-Book') format('svg');
+        font-weight: 400;
+        font-style: normal;
+      }
+        @font-face {
+          font-family: 'Gotham';
+          src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+          src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot?#iefix') format('embedded-opentype'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/52/55/525528d6-1b12-4077-af7a-26473d4816a8/hinted-gotham-bold.woff2') format('woff2'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d2/b4/d2b43640-6799-41eb-b137-c67adc3ddf0b/hinted-gotham-bold.woff') format('woff'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/fa/dd/faddadef-eb2a-4abe-b571-82e813c8fe9f/hinted-gotham-bold.ttf') format('truetype'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/82/7d/827d56e1-3b10-4627-b72f-40ad04603810/hinted-gotham-bold.svg#Gotham-Bold') format('svg');
+          font-weight: 800;
+          font-style: normal;
+        }
+
+        table {
+			width: 850px; 
+			padding: 90px 114px;
+        }
+
+	    p {
+	        margin:  0;
+	    }
+
+	    p[class='blueline'] {
+			display: none;
+	    }
+
+	    center [class='reasons'] {
+			display: inline-block;
+	    }
+
+	    p[class='reasons-caption'] {
+			 padding: 2px 0 23px 20px;
+	    }
+
+	    img[class='item-img'] {
+	    	display: inline-block;
+	    	padding: 0 26px 0 5px;
+	    }
+
+	    p[class='item-desc'] {
+	    	width: 463px;
+	    	text-align: left;
+			padding-top: 12px;
+			padding-bottom: 20px;
+	    }
+
+	    p[class='touse'] {
+			 padding: 0 0 4px 18px;
+	    }
+
+	    td[class="footer"] {
+         	padding: 59px 0 20px;
+         	display: none;
+     	 }
+
+	    @media only screen and (max-width: 480px) {
+
+	    	table {
+				width: 320px;
+				padding: 0;
+	    	}
+
+			p[class='blueline'] {
+				display: block;
+		    }
+
+		     center [class='reasons'] {
+				display: block;
+		    }
+
+		    img[class='item-img'] {
+		    	display: block;
+		    	padding: 0;
+		    }
+
+		    p[class='item-desc'] {
+		    	width: 280px;
+		    	text-align: center;
+		    	padding-top: 34px;
+		    	padding-bottom: 32px;
+		    }
+			
+			p[class='reasons-caption'] {
+				 padding: 28px 0 13px 3px;
+		    }
+
+		    p[class='touse'] {
+				 padding: 7px 0 9px 3px;
+		    }
+
+		    img[class='logo'] {
+		    	padding-top: 20px;
+		    }
+
+		    span[class="item-text"] {
+		    	padding-bottom: 19px;
+		    }
+
+		    td[class="footer"] {
+		    	display: block;
+	            padding: 39px 0 20px;
+	            background-color: #2f3e4d;
+	        }
+	    }
+    </style>
+</head>
+<body>
+	<table>
+			<tr>
+				<td>
+					<center style="padding-bottom: 34px;">
+						<img src="img/top.png" alt="" style="display: inline-block;">
+							<center class="reasons" style="vertical-align: top; width: 326px;">
+								<p class="reasons-caption" style="font-family: 'Gotham'; font-size: 46px; font-weight: 400; text-transform: uppercase; color: #4c5051; letter-spacing: 1.3px;">Reasons</p>
+								<p class="blueline" style="width: 248px; height: 3px; background-color: #23afdb;"></p>
+								<p class="touse" style="font-family: 'Gotham'; font-size: 31px; font-weight: 400; color: #4c5051;">to use</p>
+								<p class="blueline" style="width: 248px; height: 3px; background-color: #23afdb;"></p>
+								<img class="logo" src="img/logo.png" alt="">
+							</center>
+					</center>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<img class="item-img" src="img/control.png" alt="">
+						<p class="item-desc" style="color: #4c5051; font-size: 17px; font-weight: 400; display: inline-block; vertical-align: top;">
+						<span class="item-text" style="display: block; color: #4c5051; font-size: 17px; font-weight: 800">Control Your Cannabis Experience</span>
+						When buying cannabis, the most important consideration is the strain's ability to bring about desired effects or medical benefits. Our strain selection wizard will recommend the best-matching strains, personalized for your unique needs.</p>
+					</center>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<img class="item-img" src="img/money.png" alt="">
+						<p class="item-desc" style="color: #4c5051; font-size: 17px; font-weight: 400; display: inline-block; vertical-align: top;">
+						<span class="item-text" style="display: block; color: #4c5051; font-size: 17px; font-weight: 800">Save Money</span>
+						Found the perfect strain? Great! Now you can easily compare the price at different dispensaries and delivery services. Don’t waste money on strains that can’t deliver the effects you are looking for.</p>
+					</center>
+				</td>
+			</tr>
+			<tr">
+				<td>
+					<center>
+						<img class="item-img" src="img/choose.png" alt="">
+						<p class="item-desc" style="color: #4c5051; font-size: 17px; font-weight: 400; display: inline-block; vertical-align: top; ">
+						<span class="item-text" style="display: block; color: #4c5051; font-size: 17px; font-weight: 800">Choose Wisely</span>
+						Promote responsible and purposeful use of cannabis by treating it like the therapy which it is and understanding and distinguishing quality, legally grown and pesticide free product. </p>
+					</center>
+				</td>
+			</tr>
+			<tr">
+				<td>
+					<center>
+						<img class="item-img" src="img/bonus.png" alt="" >
+						<p class="item-desc" style="color: #4c5051; font-size: 17px; font-weight: 400;  display: inline-block; vertical-align: top;">
+						<span class="item-text" style="display: block; color: #4c5051; font-size: 17px; font-weight: 800">Bonus Tip: Save Time</span>
+						StrainRx lets you quickly look over an entire menu to see if multiple strains could work for you. Save an extra trip to the dispensary by getting everything you need in one trip.</p>
+					</center>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<center>
+						<p style="color: #4c5051; font-size: 15px; padding: 15px 0 5px 0; font-weight: 400;  display: block; vertical-align: top;">
+							So what are you waiting for?
+						</p>
+						<a href="#">
+							<img src="img/findbottom.png" alt="">
+						</a>
+					</center>
+				</td>
+			</tr>
+			<tr>
+	            <td class="footer">
+		            <center>
+		                <a href="https://www.facebook.com/StrainRx/"><img src="https://s3.amazonaws.com/srx-prod/media/filer_public/7f/d6/7fd69f57-c4d3-421b-a99f-7dbc5ff7027f/facebook.png" alt=""></a>
+		            </center>
+	            </td>
+        	</tr>
+	</table>
+	 <div style="display:none;white-space:nowrap;font:15px courier;color:#ffffff;">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+</body>
+</html>
+
+</body>
+</html>
