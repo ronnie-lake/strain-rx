@@ -1,0 +1,197 @@
+.timeline {
+
+	&__caption {
+		font-family: 'Gotham';
+		font-size: 35px;
+		font-weight: 400;
+		color: #434343;
+		margin: 2px 0 18px 0;
+		letter-spacing: -2.6px;
+
+		@media (max-width: 360px) {
+			width: 255px;
+			text-align: center;
+			font-size: 48px;
+			margin: 2px auto 36px;
+		}
+	}
+
+	&__descript {
+		font-family: 'Gotham';
+		font-size: 15px;
+		font-weight: 400;
+		color: #7b7979;
+		line-height: 19px;
+		margin-top: 23px;
+		letter-spacing: -0.73px;
+
+		@media (max-width: 1191px) {
+			margin: 0 auto;
+			margin-top: 37px;
+			line-height: 21px;
+			font-size: 18px;
+		}
+	}
+}
+
+.history {
+
+	position: relative;
+	margin-top: 39px;
+	text-align: center;
+
+	@media (max-width: 1191px) {
+		display: none;
+	}
+
+	&_adaptive {
+
+		display: none;
+
+		@media (max-width: 1191px) {
+			display: block;
+			margin-top: 29px;
+		}
+	}
+
+
+	&__container {
+
+		display: inline-block;
+		vertical-align: top;
+
+		&_left {
+			margin-right: 73px;
+
+		}
+
+		&_right {
+
+		}
+	}
+
+	&__line {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+		z-index: -1;
+		width: 4px;
+		background-color: #00ff00;
+	}
+
+	&__century {
+		text-align: center;
+	}
+
+	&__button {
+		display: inline-block;
+		background-color: #267b2e;
+		border-radius: 5px;
+		color: #fff;
+		padding: 12px 57px 11px 61px;
+		letter-spacing: -0.3px;
+		font-family: 'Gotham';
+		font-size: 18px;
+		font-weight: 400;
+		margin-bottom: 33px;
+
+		&_first {
+			margin-bottom: 53px;
+		}
+
+		@media (max-width: 1191px) {
+			margin-bottom: 28px;
+		}
+	}
+
+	&__card {
+		width: 360px;
+		border: 1px solid #b1b1b1;
+		position: relative;
+		margin-bottom: 29px;
+		text-align: left;
+		font-size: 0;
+
+		&_left {
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 94px;
+				height: 42px;
+				background: url(../img/history-left.png);
+				top: -21px;
+				right: -62px;
+
+				@media (max-width: 1191px) {
+					display: none;
+				}
+			}
+		}
+
+		&_right {
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 94px;
+				height: 42px;
+				background: url(../img/history-right.png);
+				top: -21px;
+				left: -61px;
+
+				@media (max-width: 1191px) {
+					display: none;
+				}
+			}
+		}
+
+		&_first {
+			margin-top: 60px;
+		}
+
+		&_second {
+			margin-top: 26px;
+		}
+
+		&_third {
+			margin-top: 34px;
+		}
+
+		&_fourth {
+			margin-top: 18px;
+		}
+
+		@media (max-width: 1191px) {
+			text-align: center;
+			background-color: #fff;
+			margin: 0 auto 16px;
+			width: 330px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__descript {
+		margin: 14px 7px 13px 12px;
+		font-family: 'Gotham';
+		font-size: 14px;
+		font-weight: 400;
+		color: #434343;
+		line-height: 17px;
+		letter-spacing: -0.3px;
+
+
+		@media (max-width: 1191px) {
+			font-size: 14px;
+			margin: 10px 4px 12px 5px;
+			text-align: left;
+		}
+	}
+}

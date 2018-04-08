@@ -29,6 +29,18 @@ a:focus {
 		clear: both;
 	}
 
+	&_left {
+		padding-left: 26px;
+
+		@media (max-width: 1191px) {
+			padding-left: 0;
+		}
+
+		@media (max-width: 600px) {
+			margin: 0 30px;
+		}
+	}
+
 	@media (max-width: 1200px) {
 		width: 960px
 	}
@@ -658,3 +670,4 @@ a:focus {
 @import 'claim.less';
 @import 'ready.less';
 @import 'guide.less';
+@import 'timeline.less';
