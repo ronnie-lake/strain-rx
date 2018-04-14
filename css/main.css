@@ -18,6 +18,7 @@ a:focus {
   width: 1140px;
   margin: 0 auto;
   position: relative;
+  padding: 0;
 }
 .container_large {
   width: 1195px;
@@ -2393,4 +2394,152 @@ a:focus {
   font-weight: 400;
   color: #478ede;
   display: block;
+}
+.window {
+  width: 500px;
+  position: relative;
+  padding: 46px 38px 37px 37px;
+  box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .window {
+    padding: 45px 30px;
+    width: auto;
+  }
+}
+.window__cont {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .window__cont {
+    display: block;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+}
+.window__caption {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 32px;
+  color: #000;
+  vertical-align: top;
+  letter-spacing: -1.6px;
+  margin-bottom: 24px;
+}
+@media (max-width: 500px) {
+  .window__caption {
+    display: block;
+    font-size: 47px;
+    margin-bottom: 0;
+  }
+}
+.window__caption-min {
+  display: inline-block;
+  font-family: 'Gotham';
+  color: #a7a6a6;
+  font-size: 18px;
+  font-weight: 400;
+  vertical-align: top;
+  margin: 14px 0 0 5px;
+  letter-spacing: -1px;
+}
+@media (max-width: 500px) {
+  .window__caption-min {
+    display: block;
+    font-size: 27px;
+    margin-top: -2px;
+  }
+}
+.window__boiling {
+  display: inline-block;
+  float: right;
+}
+.window__precaption {
+  font-family: 'Gotham';
+  color: #7b7979;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 19px 0 18px 3px;
+  letter-spacing: -0.6px;
+}
+.window__descript {
+  font-family: 'Gotham';
+  color: #7b7979;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.75px;
+  margin-left: 3px;
+  line-height: 18px;
+}
+.window__button {
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #0076a3;
+  font-family: 'Gotham';
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  padding: 13px 0 14px 0;
+  margin: 19px auto;
+  width: 129px;
+}
+@media (max-width: 500px) {
+  .window__button {
+    margin: 29px auto;
+  }
+}
+.window__close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 21px;
+  height: 20px;
+  background: url(../img/window-close.png) no-repeat;
+}
+@media (max-width: 500px) {
+  .window__close {
+    top: 21px;
+    right: 20px;
+  }
+}
+.boiling {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .boiling {
+    float: none;
+    display: none;
+  }
+}
+.boiling__adaptive {
+  display: none;
+  margin: 20px 0 22px 0;
+}
+@media (max-width: 500px) {
+  .boiling__adaptive {
+    display: block;
+  }
+}
+.boiling__caption {
+  font-family: 'Gotham';
+  color: #000;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  display: block;
+  letter-spacing: -0.2px;
+  margin-bottom: -1px;
+}
+.boiling__temperature {
+  font-family: 'Gotham';
+  color: #000;
+  font-size: 10px;
+  font-weight: 800;
+  margin-top: 5px;
+  display: block;
+  margin-top: -4px;
 }
