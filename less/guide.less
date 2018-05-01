@@ -94,7 +94,7 @@
 			content: '';
 			flex-grow: 1;
 			display: inline-block;
-			height: 4px;
+			height: 1px;
 			background-color: #fff;
 			margin-right: 11px;
 
@@ -107,7 +107,7 @@
 			content: '';
 			flex-grow: 1;
 			display: inline-block;
-			height: 4px;
+			height: 1px;
 			background-color: #fff;
 			margin-left: 5px;
 
@@ -149,7 +149,6 @@
 	}
 
 	&__container {
-		margin-top: -121px;
 		text-align: center;
 		position: relative;
 		min-height: 714px;
@@ -161,12 +160,7 @@
 	}
 
 	&__compas {
-		@media (max-width: 992px) {
-			display: none;
-		}
-	}
 
-	&__compas-adapt {
 		display: none;
 
 		@media (max-width: 992px) {
@@ -182,16 +176,25 @@
 
 .guidelist {
 	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 230px;
+
+	@media (max-width: 992px) {
+		display: block;
+	}
 
 	&__item {
-		position: absolute;
-		width: 175px;
+		width: 33%;
+		margin-top: 66px;
 
 		@media (max-width: 992px) {
 			position: static;
 			margin: 0 auto;
 			margin-bottom: 53px;
 			width: 285px;
+			display: block;
 		}
 
 		&_productivity {
@@ -287,6 +290,8 @@
 
 	&__name {
 		margin-bottom: 5px;
+		width: 175px;
+		margin: 0 auto;
 
 		@media (max-width: 992px) {
 			margin-bottom: 10px;
@@ -316,6 +321,8 @@
 		color: #7d7d7d;
 		line-height: 18px;
 		letter-spacing: -.4px;
+		width: 175px;
+		margin: 0 auto;
 
 		@media (max-width: 992px) {
 			font-size: 24px;
@@ -323,13 +330,13 @@
 		}
 	}
 
-	&__more {
-		display: block;
-		margin-top: 2px;
-		font-family: 'Gotham';
-		font-weight: 400;
-		font-size: 16px;
-		color: #10b3dc;
-		text-decoration: none;
-	}
+	// &__more {
+	// 	display: block;
+	// 	margin-top: 2px;
+	// 	font-family: 'Gotham';
+	// 	font-weight: 400;
+	// 	font-size: 16px;
+	// 	color: #10b3dc;
+	// 	text-decoration: none;
+	// }
 }
