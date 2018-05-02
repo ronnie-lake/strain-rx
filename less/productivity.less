@@ -79,6 +79,12 @@
 
 		&_movie {
 			margin: 18px 84px 92px 14px;
+
+			@media (max-width: 1200px) {
+				margin-right: 0;
+				margin-left: 0;
+				padding: 0 15px;
+			}
 		}
 	}
 
@@ -104,7 +110,7 @@
 			margin-top: 16px;
 			background: url(../img/productivity.png) no-repeat;
 
-				@media (max-width: 1200px) {
+			@media (max-width: 1200px) {
 					margin-top: 34px;
 			}
 
@@ -127,6 +133,15 @@
 		&_movie {
 			background: url(../img/movie.png) no-repeat;
 			margin-left: 8px;
+		}
+
+		&_gaming{
+			background: url(../img/gaming.png) no-repeat;
+			margin: -38px 0 0 7px;
+
+			@media (max-width: 1200px) {
+				margin-top: 0;
+			}
 		}
 	}
 }
@@ -230,6 +245,14 @@
 
 		&_arctic {
 			margin-right: 80px;
+		}
+
+		&_bird {
+			margin-top: 12px;
+		}
+
+		&_train {
+			margin-top: -21px;
 		}
 	}
 
@@ -335,7 +358,7 @@
 
 		&_buddha {
 			background: url(../img/buddha.png) no-repeat 10px 0;
-			height: 214px;
+			heigcht: 214px;
 		}
 		
 		&_willy {
@@ -366,7 +389,26 @@
 			margin-left: -14px;
 		}
 
+		&_duke {
+			background: url(../img/duke.png) no-repeat 14px 2px;
+		}
 
+		&_bird {
+			background: url(../img/bird.png) no-repeat 14px 3px;
+		}
+
+		&_lsd {
+			background: url(../img/lsd.png) no-repeat 14px 4px;
+		}
+
+		&_dragon {
+			background: url(../img/dragon.png) no-repeat 12px 3px;
+		}
+
+		&_train {
+			background: url(../img/train.png) no-repeat 12px 0;
+			height: 229px;
+		}
 	}
 
 	&__min-img {
@@ -458,7 +500,6 @@
 		font-weight: 400;
 		color: #2f3f4d;
 		line-height: 24px;
-		text-indent: 10px;
 
 		@media (max-width: 1200px) {
 			margin: 0 15px;

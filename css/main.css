@@ -919,6 +919,13 @@ a:focus {
 .section__container_movie {
   margin: 18px 84px 92px 14px;
 }
+@media (max-width: 1200px) {
+  .section__container_movie {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 15px;
+  }
+}
 .section__descript {
   font-size: 14px;
   font-family: 'Gotham';
@@ -958,6 +965,15 @@ a:focus {
 .section__img_movie {
   background: url(../img/movie.png) no-repeat;
   margin-left: 8px;
+}
+.section__img_gaming {
+  background: url(../img/gaming.png) no-repeat;
+  margin: -38px 0 0 7px;
+}
+@media (max-width: 1200px) {
+  .section__img_gaming {
+    margin-top: 0;
+  }
 }
 .list {
   list-style: none;
@@ -1053,6 +1069,12 @@ a:focus {
 .list__container_arctic {
   margin-right: 80px;
 }
+.list__container_bird {
+  margin-top: 12px;
+}
+.list__container_train {
+  margin-top: -21px;
+}
 .list__container-min {
   padding-left: 33px;
   margin-top: -4px;
@@ -1134,7 +1156,7 @@ a:focus {
 }
 .list__img_buddha {
   background: url(../img/buddha.png) no-repeat 10px 0;
-  height: 214px;
+  heigcht: 214px;
 }
 .list__img_willy {
   background: url(../img/willy.png) no-repeat 13px 3px;
@@ -1157,6 +1179,22 @@ a:focus {
 .list__img_kush {
   background: url(../img/kush.png) no-repeat 0 3px;
   margin-left: -14px;
+}
+.list__img_duke {
+  background: url(../img/duke.png) no-repeat 14px 2px;
+}
+.list__img_bird {
+  background: url(../img/bird.png) no-repeat 14px 3px;
+}
+.list__img_lsd {
+  background: url(../img/lsd.png) no-repeat 14px 4px;
+}
+.list__img_dragon {
+  background: url(../img/dragon.png) no-repeat 12px 3px;
+}
+.list__img_train {
+  background: url(../img/train.png) no-repeat 12px 0;
+  height: 229px;
 }
 .list__min-img {
   display: inline-block;
@@ -1228,7 +1266,6 @@ a:focus {
   font-weight: 400;
   color: #2f3f4d;
   line-height: 24px;
-  text-indent: 10px;
 }
 @media (max-width: 1200px) {
   .list__descript {
