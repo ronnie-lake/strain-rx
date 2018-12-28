@@ -1,3 +1,17 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
 
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
@@ -18,6 +32,10 @@ a:focus {
 
 	&_large {
 		width: 1195px;
+	}
+
+	&_medium {
+		width: 1056px;
 	}
 
 	&_small {
@@ -174,7 +192,7 @@ a:focus {
 }
 
 .main {
-	overflow: hidden;
+	// overflow: hidden;
 	min-width: 320px;
 
 	&__descript {
@@ -563,9 +581,13 @@ a:focus {
 }
 
 .footer {
+	flex-shrink: 0;
 	background-color: #231f20;
 	text-align: center;
 	padding: 34px 0 38px 0;
+	display: flex;
+	align-items: flex-end;
+	flex-grow: 0;
 
 	@media (max-width: 768px) {
 		padding: 27px 0;
@@ -678,3 +700,5 @@ a:focus {
 @import 'timeline.less';
 @import 'terpenes.less';
 @import 'terpene-window.less';
+@import 'about.less';
+@import 'cnbd.less';

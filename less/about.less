@@ -1,0 +1,144 @@
+.about {
+	position: relative;
+	padding: 46px 38px 37px 37px;
+	box-sizing: border-box;
+
+	@media (max-width: 500px) {
+		padding: 45px 30px;
+		width: auto;
+	}
+
+	&__formula {
+		position: absolute;
+
+		&_cbn {
+			top: 9px;
+			left: 312px;
+		}
+
+		&_thc {
+			top: 4px;
+			left: 340px;
+		}
+
+		&_cbg {
+			top: 8px;
+			left: 306px;
+		}
+
+		&_thcv {
+			top: 22px;
+			left: 355px;
+		}
+
+		&_cbd {
+			top: -2px;
+			left: 310px;
+		}
+
+		&_cbc {
+			top: 9px;
+			left: 304px;
+		}
+
+		@media (max-width: 768px) {
+			position: static;
+		}
+
+		@media (max-width: 500px) {
+			margin-top: 10px;
+		}
+	}
+
+	&__cont { 
+		display: inline-block;
+		margin-top: 4px;
+		margin-bottom: 10px;
+		position: relative;
+
+		@media (max-width: 768px) {
+			display: block;
+			text-align: center;
+		}
+
+
+		@media (max-width: 500px) {
+			display: block;
+			text-align: center;
+			margin-bottom: 31px;
+		}
+	}
+
+	&__caption {
+		display: inline-block;
+		font-family: 'Gotham';
+		font-weight: 500;
+		font-size: 30px;
+		color: #000;
+		vertical-align: top;
+		letter-spacing: -1.8px;
+		margin-bottom: 24px;
+
+		@media (max-width: 500px) {
+			display: block;
+			font-size: 47px;
+			margin-bottom: 0;
+		}
+	}
+
+	&__caption-min {
+		display: inline-block;
+		font-family: 'Gotham';
+		color: #a7a6a6;
+		font-size: 17px;
+		font-weight: 400;
+		vertical-align: top;
+		margin: 14px 0 0 6px;
+		letter-spacing: -0.9px;
+
+		@media (max-width: 500px) {
+			display: block;
+			font-size: 27px;
+			margin-top: -2px;
+			margin: 14px 0 14px 6px;
+		}
+	}
+
+	&__boiling {
+		display: inline-block;
+		float: right;
+		margin: 31px 39px 22px 0;
+
+		@media (max-width: 768px) {
+			float: none;
+			display: block;
+			margin: 0;
+
+		}
+
+	}
+
+	&__precaption {
+		font-family: 'Gotham';
+		color: #7b7979;
+		font-size: 18px;
+		font-weight: 800;
+		margin: 18px 0 0 0;
+		letter-spacing: -0.1px;
+	}
+
+	&__descript {
+		font-family: 'Gotham';
+		color: #434343;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: -0.18px;
+		margin-left: 3px;
+		line-height: 21px;
+		margin: 23px 0 24px 0;
+
+		&_prewrap {
+			white-space: pre-wrap;
+		}
+	}
+}
