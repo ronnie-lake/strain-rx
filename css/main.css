@@ -2691,6 +2691,7 @@ a:focus {
     margin: 14px 0 14px 6px;
   }
 }
+
 .about__boiling {
   display: inline-block;
   float: right;
@@ -2704,20 +2705,21 @@ a:focus {
   }
 }
 .about__precaption {
-  color: rgb(67, 67, 67);
-  font-size: 18px;
-  font-weight: 800;
-  margin: 18px 0 0 0;
-  letter-spacing: -0.1px;
+    color: #7b7979;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 18px 0 0 0;
+    letter-spacing: -0.6px;
 }
+
 .about__descript {
-  color: #434343;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: -0.18px;
-  margin-left: 3px;
-  line-height: 21px;
-  margin: 23px 0 24px 0;
+    color: #7b7979;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.75px;
+    margin-left: 3px;
+    line-height: 21px;
+    margin: 23px 0 24px 0;
 }
 .about__descript_prewrap {
   white-space: pre-wrap;
@@ -2848,6 +2850,12 @@ a:focus {
   margin: 0;
   width: 100%;
   margin: 0 0 38px 0;
+}
+
+.cnbd__imgtext:last-child {
+  margin: 0;
+  width: 100%;
+  margin: 0 0 0 0;
 }
 @media (max-width: 576px) {
   .cnbd__imgtext {
