@@ -3058,3 +3058,8 @@ a:focus {
   display: block;
   margin-top: 3px;
 }
+.search-engine__link{
+    color: #10b3dc;
+    text-decoration: none;
+    cursor: pointer;
+}

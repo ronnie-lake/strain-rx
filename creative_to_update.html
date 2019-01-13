@@ -1,0 +1,929 @@
+<style type="text/css">h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: '';
+}
+.container_after {
+  clear: both;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+}
+.header {
+  position: relative;
+  background-color: #2f3f4e;
+  padding: 13px 0 19px 0;
+  min-width: 320px;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+.header__logo {
+  display: inline-block;
+  width: 190px;
+  height: 48px;
+}
+@media (max-width: 768px) {
+  .header__logo {
+    width: 153px;
+    height: auto;
+  }
+}
+.header__logo-pic {
+  width: 100%;
+}
+.header__burger {
+  display: none;
+  float: right;
+  margin-top: 3px;
+  margin-right: 6px;
+  width: 25px;
+  height: 18px;
+  background: url(../img/burger.png) no-repeat;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .header__burger {
+    display: block;
+  }
+}
+.header__menu {
+  display: inline-block;
+  list-style: none;
+  margin: 19px 22px 0 0;
+  float: right;
+}
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__menu_adaptive {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__menu_adaptive {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    background-color: #2f3f4e;
+    border-top: 1px solid #231f20;
+  }
+}
+.header__menu-item {
+  display: inline-block;
+  padding-left: 15px;
+}
+.header__menu-item:not(:last-child):after {
+  content: '';
+  display: inline-block;
+  background-color: #10b3dc;
+  width: 2px;
+  height: 14px;
+  margin-left: 11px;
+}
+@media (max-width: 768px) {
+  .header__menu-item:not(:last-child):after {
+    content: none;
+  }
+}
+@media (max-width: 768px) {
+  .header__menu-item {
+    display: block;
+  }
+}
+.header__link,
+.header__link:active,
+.header__link:focus {
+  display: inline-block;
+  text-decoration: none;
+  color: #10b3dc;
+  font-family: 'Gotham';
+  font-size: 15px;
+  font-weight: 400;
+}
+.header__link:hover,
+.header__link:active:hover,
+.header__link:focus:hover {
+  text-decoration: none;
+  color: #10b3dc;
+}
+@media (max-width: 768px) {
+  .header__link,
+  .header__link:active,
+  .header__link:focus {
+    display: block;
+    padding: 15px;
+  }
+}
+.main {
+  overflow: hidden;
+  min-width: 320px;
+}
+.main__descript {
+  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/2c/08/2c08a0b6-6072-4f97-99db-28273980dc86/header.png) no-repeat;
+  background-size: 100%;
+  background-position: center 65%;
+}
+.main__descript_contacts {
+  background-image: url(../img/header-cont.png);
+  background-size: cover;
+  padding: 117px 0 102px 0;
+}
+@media (max-width: 768px) {
+  .main__descript_contacts {
+    padding: 33px 0 30px 0;
+  }
+}
+.main__mask {
+  padding-bottom: 56px;
+  background: rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 768px) {
+  .main__mask {
+    padding-bottom: 62px;
+  }
+}
+.descript__container {
+  text-align: center;
+}
+.descript__mask {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 72px 0 84px 0;
+}
+@media (max-width: 768px) {
+  .descript__mask {
+    padding: 26px 0 37px 0;
+  }
+}
+.descript__caption {
+  display: block;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 14px;
+}
+@media (max-width: 768px) {
+  .descript__caption {
+    font-size: 26px;
+    margin-bottom: 3px;
+  }
+}
+.descript__text {
+  display: inline-block;
+  max-width: 775px;
+  min-width: 244px;
+  width: auto;
+  font-family: 'Gotham';
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.44px;
+  line-height: 23px;
+}
+@media (max-width: 768px) {
+  .descript__text {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+.part {
+  text-align: center;
+  padding: 60px 0 27px 0;
+}
+@media (max-width: 768px) {
+  .part {
+    padding: 40px 0 0 0;
+  }
+}
+.part__logo {
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 62px;
+}
+.part__logo_work {
+  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/92/30/92302f27-8e6c-44cd-ae6e-95a659504ae3/work.png) no-repeat;
+}
+.part__logo_smoking {
+  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/aa/a8/aaa8608d-420a-4d90-ad9b-d52f8fc3e48a/smoking.png) no-repeat;
+}
+.part__logo_medical {
+  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/82/e0/82e01751-3e0d-4634-8a28-b079256efca9/medical.png) no-repeat;
+}
+.part__logo_side {
+  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/1a/70/1a709b9c-2796-4464-8981-8f7e7511057c/side.png) no-repeat;
+}
+.part__caption {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-weight: 400;
+  color: #8e8e93;
+  margin: 39px 0 21px 0;
+  letter-spacing: -0.9px;
+}
+@media (max-width: 768px) {
+  .part__caption {
+    font-size: 21px;
+    margin: 25px 0 9px 0;
+  }
+}
+@media (max-width: 768px) {
+  .part__caption_how {
+    font-weight: 800;
+  }
+}
+.part__caption_blue,
+.part__caption_blue:hover {
+  color: #10b3dc;
+  margin: 0;
+}
+.part__descript {
+  font-family: 'Gotham';
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e8e93;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .part__descript {
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+.part__descript_work {
+  max-width: 804px;
+  min-width: 260px;
+  width: auto;
+}
+.part__descript_smoking {
+  max-width: 725px;
+  min-width: 260px;
+  width: auto;
+}
+.part__descript_side {
+  max-width: 880px;
+  min-width: 260px;
+  width: auto;
+}
+.part__descript_medical {
+  max-width: 868px;
+  min-width: 260px;
+  width: auto;
+}
+.part__descript_blue,
+.part__descript_blue:hover {
+  font-size: 18px;
+  color: #10b3dc;
+}
+@media (max-width: 768px) {
+  .part__descript_blue,
+  .part__descript_blue:hover {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .part__descript {
+    font-size: 15px;
+    width: 260px;
+  }
+}
+.part__img {
+  margin-top: 47px;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .part__img {
+    display: none;
+  }
+}
+.part__img_expl {
+  margin-left: 5%;
+}
+.part__img-ad {
+  display: none;
+}
+@media (max-width: 768px) {
+  .part__img-ad {
+    display: block;
+    margin: 17px auto 0;
+  }
+}
+@media (max-width: 768px) {
+  .part__img-ad_expl {
+    -webkit-transform: translate(8%);
+            transform: translate(8%);
+  }
+}
+.results {
+  background: url(https://s3.amazonaws.com/srx-prod/media/filer_public/b2/0a/b20a58fb-d52e-4d95-b087-4850cef46103/results.png) no-repeat;
+  background-size: cover;
+  margin-top: 53px;
+  text-align: center;
+}
+.results__caption {
+  display: block;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-weight: 400;
+  color: #10b3dc;
+  margin: 79px 0 17px 0;
+}
+@media (max-width: 768px) {
+  .results__caption {
+    font-size: 22px;
+    margin: 36px 0 18px 0;
+  }
+}
+.results__text {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.4px;
+  min-width: 278px;
+  max-width: 564px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .results__text {
+    font-size: 15px;
+  }
+}
+.results__img {
+  margin-top: -22px;
+  margin-bottom: 90px;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .results__img {
+    margin-top: 0;
+    margin-bottom: 61px;
+  }
+}
+@media (max-width: 768px) {
+  .results__img {
+    display: none;
+  }
+}
+.results__img_expl {
+  margin-left: 4%;
+}
+.results__img-ad {
+  display: none;
+}
+@media (max-width: 768px) {
+  .results__img-ad {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 59px;
+  }
+}
+.results__button-left {
+  margin-left: 55px;
+}
+@media (max-width: 1200px) {
+  .results__button-left {
+    margin-left: 43px;
+  }
+}
+@media (max-width: 768px) {
+  .results__button-left {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .results__container {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+.results__container_left {
+  float: right;
+}
+@media (max-width: 768px) {
+  .results__container_left {
+    float: none;
+  }
+}
+.results__container_right {
+  float: left;
+}
+@media (max-width: 768px) {
+  .results__container_right {
+    float: none;
+  }
+}
+.results__buttons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-left: -55px;
+}
+@media (max-width: 768px) {
+  .results__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding-top: 30px;
+    margin-left: 0;
+  }
+}
+.results__button,
+.results__button:hover {
+  cursor: pointer;
+  display: inline-block;
+  background: #0eb4de;
+  font-family: 'Gotham Pro';
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  padding: 9px 50px 10px 50px;
+  border-radius: 6px;
+  letter-spacing: .5px;
+}
+.results__clar {
+  display: block;
+  font-family: 'Gotham Pro';
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 12px;
+}
+@media (max-width: 768px) {
+  .results__clar {
+    margin-top: 8px;
+  }
+}
+.results__or {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Arial';
+  font-size: 22px;
+  color: #fff;
+  vertical-align: top;
+  padding: 6px 36px 0 42px;
+}
+@media (max-width: 1200px) {
+  .results__or {
+    padding: 6px 36px 0 42px;
+  }
+}
+@media (max-width: 992px) {
+  .results__or {
+    padding: 6px 36px 0 42px;
+  }
+}
+@media (max-width: 768px) {
+  .results__or {
+    display: block;
+    font-size: 25px;
+    padding: 23px 0 20px 0;
+  }
+}
+.footer {
+  background-color: #231f20;
+  text-align: center;
+  padding: 34px 0 38px 0;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 27px 0;
+  }
+}
+.footer__menu-item {
+  display: inline-block;
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
+  .footer__menu-item {
+    margin-bottom: 28px;
+  }
+}
+.footer__menu-item:not(:last-child) {
+  border-right: 1px solid #fff;
+  padding-right: 9px;
+}
+@media (max-width: 768px) {
+  .footer__menu-item:not(:last-child) {
+    display: block;
+    border: none;
+  }
+}
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-family: 'Gotham';
+  font-weight: 400;
+  letter-spacing: .1px;
+}
+@media (max-width: 768px) {
+  .footer__link {
+    font-size: 18px;
+  }
+}
+.footer__link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__link_green {
+  color: #52b826;
+}
+.footer__copy {
+  display: inline-block;
+  margin-top: 23px;
+  color: #fff;
+  font-size: 11px;
+  font-family: 'Gotham';
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .footer__copy {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 4px;
+  }
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.descript-contacts__container {
+  text-align: center;
+}
+.descript-contacts__caption {
+  display: block;
+  font-family: 'Gotham';
+  font-size: 52px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 14px;
+}
+@media (max-width: 768px) {
+  .descript-contacts__caption {
+    font-size: 26px;
+    margin-bottom: 3px;
+  }
+}
+.touch {
+  padding: 56px 0 86px 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .touch {
+    padding: 18px 0 37px 0;
+  }
+}
+.touch__caption {
+  font-family: 'Gotham';
+  font-size: 30px;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 29px;
+  letter-spacing: 0.1px;
+}
+@media (max-width: 768px) {
+  .touch__caption {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+}
+.touch__text {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 51px;
+  max-width: 670px;
+  min-width: 330px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .touch__text {
+    margin-bottom: 23px;
+  }
+}
+.touch__form {
+  margin-bottom: 30px;
+}
+.touch__inputs-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding-left: 17px;
+}
+@media (max-width: 768px) {
+  .touch__inputs-container {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+}
+.touch__inputs {
+  width: 390px;
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .touch__inputs {
+    margin-right: 0;
+  }
+}
+.touch__label {
+  display: block;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .touch__label {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .touch__label {
+    margin-left: 0;
+    width: 329px;
+    margin: 0 auto;
+  }
+}
+.touch__label:before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  border-right: 1px solid #d5d5d5;
+}
+.touch__label_name:before {
+  background: url(../img/name.png) no-repeat 5px 6px;
+}
+.touch__label_mail:before {
+  background: url(../img/mail.png) no-repeat 5px 7px;
+}
+.touch__label_subject:before {
+  background: url(../img/subject.png) no-repeat 8px 4px;
+}
+.touch__label_message {
+  margin-left: 12px;
+  width: 388px;
+}
+@media (max-width: 992px) {
+  .touch__label_message {
+    margin: 0 auto;
+    width: 328px;
+  }
+}
+.touch__label_message:before {
+  top: 10px;
+  left: 15px;
+  background: url(../img/message.png) no-repeat 1px 6px;
+}
+.touch__input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 2px solid #d5d5d5;
+  border-radius: 4px;
+  padding: 13px 45px;
+  margin-bottom: 27px;
+  color: #666;
+  font-family: 'Gotham';
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+}
+.touch__input_message {
+  height: 191px;
+  resize: none;
+  padding: 12px 52px;
+}
+.touch__button {
+  border: none;
+  float: right;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Gotham';
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #10b3dc;
+  padding: 13px 43px 11px 44px;
+  margin: 2px 161px 0 0;
+}
+@media (max-width: 1200px) {
+  .touch__button {
+    margin-right: 71px;
+  }
+}
+@media (max-width: 992px) {
+  .touch__button {
+    margin: 1px auto 0;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+  }
+}
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/51/67/516777c9-35a6-4e5d-8242-13e4c5d371de/hinted-gothampro-medium.eot');
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/51/67/516777c9-35a6-4e5d-8242-13e4c5d371de/hinted-gothampro-medium.eot?#iefix') format('embedded-opentype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/99/d6/99d612db-4456-42f1-a719-f44956149fa3/hinted-gothampro-medium.woff2') format('woff2'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/cf/f6/cff67605-3e42-4647-9766-123ba1fd7755/hinted-gothampro-medium.woff') format('woff'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/30/0f/300f851c-f20d-444b-b28e-4857255c57d8/hinted-gothampro-medium.ttf') format('truetype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b7/ad/b7adce79-444f-4281-80df-b18bc04b2401/hinted-gothampro-medium.svg#GothamPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/23/b3/23b3f7fc-bdfd-48d3-a07b-bab94f6f35ae/hinted-gotham-book.eot?#iefix') format('embedded-opentype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/1d/f2/1df24a6a-9178-4957-b406-ce998abd2893/hinted-gotham-book.woff2') format('woff2'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/28/ed/28ed3d3c-653d-4623-a0d9-454fea9c375a/hinted-gotham-book.woff') format('woff'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2d/f4/2df42930-21e1-4c3f-82f7-f71c92969d93/hinted-gotham-book.ttf') format('truetype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d4/bf/d4bfb1bb-f111-4a7a-b2f9-94d00ba49581/hinted-gotham-book.svg#Gotham-Book') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/95/24/9524e567-27ef-4b2a-8567-c3ea9676ff61/hinted-gothampro.eot');
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/95/24/9524e567-27ef-4b2a-8567-c3ea9676ff61/hinted-gothampro.eot?#iefix') format('embedded-opentype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/ff/79/ff79a829-3cca-41a9-aa9a-a78a324ffaf5/hinted-gothampro.woff2') format('woff2'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/07/e9/07e9d68c-a5db-42c6-b539-5f725c1d8a7c/hinted-gothampro.woff') format('woff'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2e/26/2e2653e5-e37d-47da-8eb9-0a44ffae7772/hinted-gothampro.ttf') format('truetype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/7c/d8/7cd8f957-8d18-4717-ac6d-46d7024e5c34/hinted-gothampro.svg#GothamPro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot?#iefix') format('embedded-opentype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/52/55/525528d6-1b12-4077-af7a-26473d4816a8/hinted-gotham-bold.woff2') format('woff2'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d2/b4/d2b43640-6799-41eb-b137-c67adc3ddf0b/hinted-gotham-bold.woff') format('woff'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/fa/dd/faddadef-eb2a-4abe-b571-82e813c8fe9f/hinted-gotham-bold.ttf') format('truetype'),
+		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/82/7d/827d56e1-3b10-4627-b72f-40ad04603810/hinted-gotham-bold.svg#Gotham-Bold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+#content {
+    width: 100% !important;
+    margin-bottom: 0px;
+}
+
+.article-title{
+    display:none;
+}
+</style>
+<div class="main">
+<div class="main__descript descript">
+<div class="descript__mask">
+<div class="container descript__container">
+<h1 class="descript__caption"><img align="" height="" src="" title="" width="" />How It Works</h1>
+
+<p class="descript__text">Before you buy cannabis, find out if the strain you&rsquo;re considering is the ideal strain for you, or if a different option may provide a better experience!</p>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="main__part part">
+<div class="row">
+<div class="part__logo part__logo_work">&nbsp;</div>
+</div>
+
+<h1 class="part__caption part__caption_how">How does StrainRx work?</h1>
+
+<p class="part__descript part__descript_work">Our strain matching system identifies your ideal strain option(s) based on 4 sets of criteria, with a local filter to help you find what you need nearby.</p>
+
+<p class="part__descript part__descript_work">First, select the class of cannabis you desire. <a class="part__descript_blue" href="https://strainrx.co/strains/indica/">Indica,</a> <a class="part__descript_blue" href="https://strainrx.co/strains/sativa/">Sativa,</a> <a class="part__descript_blue" href="https://strainrx.co/strains/hybrid/">or Hybrid</a> are your options, and you can choose one, all, or skip this choice entirely.</p>
+<img alt="" class="part__img" src="https://s3.amazonaws.com/srx-prod/media/filer_public/53/87/5387d8a2-d731-4856-b59f-f7a59eea829b/screen1.png" /> <img alt="" class="part__img-ad" src="https://s3.amazonaws.com/srx-prod/media/filer_public/29/ab/29abe817-4ff0-48d7-89a7-6f9caac2ccc4/screen1ad.png" /></div>
+
+<div class="main__part part">
+<div class="row">
+<div class="part__logo part__logo_smoking">&nbsp;</div>
+</div>
+
+<h1 class="part__caption">Smoking recreationally?</h1>
+
+<p class="part__descript part__descript_smoking">Take advantage of the EFFECT related options! Choose up to 5 and configure a desired potency for each.</p>
+<img alt="" class="part__img part__img_expl" src="https://s3.amazonaws.com/srx-prod/media/filer_public/ab/06/ab06e037-cb9f-4bce-9deb-2e3c9fa95416/screen2.png" /> <img alt="" class="part__img-ad part__img-ad_expl" src="https://s3.amazonaws.com/srx-prod/media/filer_public/4f/69/4f69e901-1b63-477c-8b9a-efaf46bc2a8f/screen2ad.png" /></div>
+
+<div class="main__part part">
+<div class="row">
+<div class="part__logo part__logo_medical">&nbsp;</div>
+</div>
+
+<h1 class="part__caption">Medical marijuana</h1>
+
+<p class="part__descript part__descript_medical">You have the opportunity to configure the desired benefits you hope to derive from using cannabis. Select from 13 ailments that include relief from conditions such as chronic pain, insomnia, and fatigue. Much like with effects, the potency meter indicates the importance of each selection. Users with no medical concerns can choose to skip this step as well.</p>
+<img alt="" class="part__img" src="https://s3.amazonaws.com/srx-prod/media/filer_public/36/59/3659af95-6df2-44a1-9a54-bd913e9b3bd1/screen3.png" /> <img alt="" class="part__img-ad" src="https://s3.amazonaws.com/srx-prod/media/filer_public/1a/69/1a6912d7-8e5c-48ca-9365-1d4ff23da0d6/screen3ad.png" /></div>
+
+<div class="main__part part">
+<div class="row">
+<div class="part__logo part__logo_side">&nbsp;</div>
+</div>
+
+<h1 class="part__caption">Side effects?</h1>
+
+<p class="part__descript part__descript_side">Finally, our wizard allows you to specify any sensitivities to the known side effects brought on by cannabis use. If a strain is known to produce the effects you deem to be undesirable, we&rsquo;ll make sure to exclude it from the final recommendation.</p>
+
+<p class="part__descript">Don&rsquo;t care about a little dry mouth? No problem, just skip ahead!</p>
+<img alt="" class="part__img" src="https://s3.amazonaws.com/srx-prod/media/filer_public/1e/da/1eda2062-9f0f-41aa-a6e1-c571fcfe3ed0/screen4.png" /> <img alt="" class="part__img-ad" src="https://s3.amazonaws.com/srx-prod/media/filer_public/d0/b9/d0b9fce6-961b-4d83-89aa-d0d72e1eaad9/screen4ad.png" /></div>
+</div>
+
+<div class="main__results results">
+<div class="main__mask">
+<div class="container">
+<h1 class="results__caption">Results</h1>
+
+<p class="results__text">Your customized results are ready! Now you can compare prices, read reviews, and find the vendors closest to you.</p>
+<img alt="" class="results__img results__img_expl" src="https://s3.amazonaws.com/srx-prod/media/filer_public/29/8d/298d6126-5ee9-4e95-8194-559957cb7b59/screen5.png" /> <img alt="" class="results__img-ad" src="https://s3.amazonaws.com/srx-prod/media/filer_public/b3/ac/b3ac1fa9-39e0-4228-82fd-eca337826c70/screen5ad.png" />
+<div class="results__buttons">
+<div class="results__button-left">
+<div class="results__container results__container_left"><a class="results__button" href="https://strainrx.co/users/signup/wizard/">Sign Up Now </a> <span class="results__clar"> New Members </span></div>
+</div>
+<span class="results__or">or </span>
+
+<div class="results__container results__container_right"><a class="results__button" href="https://strainrx.co">Find a Strain </a> <span class="results__clar"> Existing Members </span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" "=""></script><script type="text/javascript">
+$(function() {
+  $(document).on('click', '.header__burger', function(e) {
+    $(this).next().slideToggle();
+  });
+
+  $(document).on('click', function(e) {
+    if (!$(e.target).is('.header__burger') && !($('.header__burger').css('display') == 'none'))
+      $('.header__menu_adaptive').slideUp();
+  });
+});
+
+</script>
