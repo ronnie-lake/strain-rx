@@ -780,52 +780,187 @@ a:focus {
     outline: none;
   }
 }
-@font-face {
-	font-family: 'Gotham Pro';
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/51/67/516777c9-35a6-4e5d-8242-13e4c5d371de/hinted-gothampro-medium.eot');
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/51/67/516777c9-35a6-4e5d-8242-13e4c5d371de/hinted-gothampro-medium.eot?#iefix') format('embedded-opentype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/99/d6/99d612db-4456-42f1-a719-f44956149fa3/hinted-gothampro-medium.woff2') format('woff2'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/cf/f6/cff67605-3e42-4647-9766-123ba1fd7755/hinted-gothampro-medium.woff') format('woff'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/30/0f/300f851c-f20d-444b-b28e-4857255c57d8/hinted-gothampro-medium.ttf') format('truetype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b7/ad/b7adce79-444f-4281-80df-b18bc04b2401/hinted-gothampro-medium.svg#GothamPro-Medium') format('svg');
-	font-weight: 500;
-	font-style: normal;
+.stages {
+  padding: 78px 0 50px 0;
+}
+
+.stages__caption {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gotham';
+    font-size: 18px;
+    font-weight: 800;
+    color: #2f3f4c;
+    letter-spacing: -1.3px;
+    min-width: 278px;
+    max-width: 855px;
+    width: auto;
+}
+
+.stages__list {
+  list-style: none;
+  padding-left: 158px;
+  margin-top: 79px;
+  margin-bottom: 47px;
+}
+
+.stages__item {
+    margin-bottom: 37px;
+}
+
+.stages__cont {
+  position: relative;
+  display: inline-block;
+  margin-right: 85px;
+}
+
+.stages__item:not(:last-child) .stages__cont:after {
+  content: '';
+  width: 4px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  background: url(img/stage-dots.png);
+  bottom: -33px;
+  left: 48px;
+}
+
+.stages__img {
+}
+
+
+.stages__description {
+  vertical-align: top;
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 13px;
+  font-weight: 400;
+  color: #2f3f4c;
+  letter-spacing: -0.4px;
+  line-height: 24px;
+  min-width: 278px;
+  max-width: 610px;
+  width: auto;
+  margin-top: 12px;
+}
+
+.stages__finalcont {
+  position: relative;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px; 
+}
+
+.stages__finalcont:before {
+  content: '';
+  display: block;
+  background: url(img/brace.png) no-repeat center center;
+  width: 986px;
+  height: 29px;
+  margin: 0 auto;
+}
+
+.stages__final {
+  margin-top: 31px;
+}
+
+.stages__text {
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Gotham';
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2f3f4c;
+  letter-spacing: -1.1px;
+  min-width: 278px;
+  max-width: 670px;
+  width: auto;
+}
+
+@media (max-width: 1200px) {
+  .stages__cont {
+    margin-right: 30px;
+  }
+
+  .stages__list {
+    padding-left: 80px;
+  }
+  .stages__finalcont:before {
+    width: 100%;
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 994px) {
+
+  .stages__cont {
+    display: block;
+    text-align: center;
+  }
+
+  .stages__list {
+    padding-left: 0;
+  }
+
+  .stages__description {
+    max-width: none;
+    width: auto;
+    text-align: center;
+  }
+
+  .stages__item:not(:last-child) .stages__cont:after {
+    display: none;
+  }
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/23/b3/23b3f7fc-bdfd-48d3-a07b-bab94f6f35ae/hinted-gotham-book.eot?#iefix') format('embedded-opentype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/1d/f2/1df24a6a-9178-4957-b406-ce998abd2893/hinted-gotham-book.woff2') format('woff2'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/28/ed/28ed3d3c-653d-4623-a0d9-454fea9c375a/hinted-gotham-book.woff') format('woff'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2d/f4/2df42930-21e1-4c3f-82f7-f71c92969d93/hinted-gotham-book.ttf') format('truetype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d4/bf/d4bfb1bb-f111-4a7a-b2f9-94d00ba49581/hinted-gotham-book.svg#Gotham-Book') format('svg');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/51/67/516777c9-35a6-4e5d-8242-13e4c5d371de/hinted-gothampro-medium.eot');
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/51/67/516777c9-35a6-4e5d-8242-13e4c5d371de/hinted-gothampro-medium.eot?#iefix') format('embedded-opentype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/99/d6/99d612db-4456-42f1-a719-f44956149fa3/hinted-gothampro-medium.woff2') format('woff2'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/cf/f6/cff67605-3e42-4647-9766-123ba1fd7755/hinted-gothampro-medium.woff') format('woff'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/30/0f/300f851c-f20d-444b-b28e-4857255c57d8/hinted-gothampro-medium.ttf') format('truetype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b7/ad/b7adce79-444f-4281-80df-b18bc04b2401/hinted-gothampro-medium.svg#GothamPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/95/24/9524e567-27ef-4b2a-8567-c3ea9676ff61/hinted-gothampro.eot');
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/95/24/9524e567-27ef-4b2a-8567-c3ea9676ff61/hinted-gothampro.eot?#iefix') format('embedded-opentype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/ff/79/ff79a829-3cca-41a9-aa9a-a78a324ffaf5/hinted-gothampro.woff2') format('woff2'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/07/e9/07e9d68c-a5db-42c6-b539-5f725c1d8a7c/hinted-gothampro.woff') format('woff'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2e/26/2e2653e5-e37d-47da-8eb9-0a44ffae7772/hinted-gothampro.ttf') format('truetype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/7c/d8/7cd8f957-8d18-4717-ac6d-46d7024e5c34/hinted-gothampro.svg#GothamPro') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Gotham';
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/23/b3/23b3f7fc-bdfd-48d3-a07b-bab94f6f35ae/hinted-gotham-book.eot?#iefix') format('embedded-opentype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/1d/f2/1df24a6a-9178-4957-b406-ce998abd2893/hinted-gotham-book.woff2') format('woff2'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/28/ed/28ed3d3c-653d-4623-a0d9-454fea9c375a/hinted-gotham-book.woff') format('woff'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2d/f4/2df42930-21e1-4c3f-82f7-f71c92969d93/hinted-gotham-book.ttf') format('truetype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d4/bf/d4bfb1bb-f111-4a7a-b2f9-94d00ba49581/hinted-gotham-book.svg#Gotham-Book') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
-	src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot?#iefix') format('embedded-opentype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/52/55/525528d6-1b12-4077-af7a-26473d4816a8/hinted-gotham-bold.woff2') format('woff2'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d2/b4/d2b43640-6799-41eb-b137-c67adc3ddf0b/hinted-gotham-bold.woff') format('woff'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/fa/dd/faddadef-eb2a-4abe-b571-82e813c8fe9f/hinted-gotham-bold.ttf') format('truetype'),
-		url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/82/7d/827d56e1-3b10-4627-b72f-40ad04603810/hinted-gotham-bold.svg#Gotham-Bold') format('svg');
-	font-weight: 800;
-	font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/95/24/9524e567-27ef-4b2a-8567-c3ea9676ff61/hinted-gothampro.eot');
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/95/24/9524e567-27ef-4b2a-8567-c3ea9676ff61/hinted-gothampro.eot?#iefix') format('embedded-opentype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/ff/79/ff79a829-3cca-41a9-aa9a-a78a324ffaf5/hinted-gothampro.woff2') format('woff2'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/07/e9/07e9d68c-a5db-42c6-b539-5f725c1d8a7c/hinted-gothampro.woff') format('woff'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2e/26/2e2653e5-e37d-47da-8eb9-0a44ffae7772/hinted-gothampro.ttf') format('truetype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/7c/d8/7cd8f957-8d18-4717-ac6d-46d7024e5c34/hinted-gothampro.svg#GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+  src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot?#iefix') format('embedded-opentype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/52/55/525528d6-1b12-4077-af7a-26473d4816a8/hinted-gotham-bold.woff2') format('woff2'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d2/b4/d2b43640-6799-41eb-b137-c67adc3ddf0b/hinted-gotham-bold.woff') format('woff'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/fa/dd/faddadef-eb2a-4abe-b571-82e813c8fe9f/hinted-gotham-bold.ttf') format('truetype'),
+    url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/82/7d/827d56e1-3b10-4627-b72f-40ad04603810/hinted-gotham-bold.svg#Gotham-Bold') format('svg');
+  font-weight: 800;
+  font-style: normal;
 }
 
 
@@ -837,6 +972,7 @@ a:focus {
 .article-title{
     display:none;
 }
+
 </style>
 <div class="main">
 <div class="main__descript descript">
@@ -912,6 +1048,61 @@ a:focus {
 </div>
 </div>
 </div>
+</div>
+<div class="stages">
+  <div class="container">
+    <h2 class="stages__caption">Every strain goes through a lengthy research and scoring process before it is published on StrainRx. 
+There are five primary stages to this process:</h2>
+<ul class="stages__list">
+  <li class="stages__item">
+    <div class="stages__cont">
+      <img src="img/stage1.png" class="stages__img" alt="">
+    </div>
+    <p class="stages__description">
+      Before a strain is added to the site, we first interview the master grower to learn about the unique characteristics of each plant directly from the individuals primarily responsible for its existence. Strains are evaluated according to criteria relating to soil, lighting, and nutrient base.
+    </p>
+  </li>
+  <li class="stages__item">
+    <div class="stages__cont">
+      <img src="img/stage2.png" class="stages__img" alt="">
+    </div>
+    <p class="stages__description">
+      Second, and with further support from the cultivator, we conduct extensive research on the history and lineage of each strain, ensuring that an accurate genetic profile is included.
+    </p>
+  </li>
+  <li class="stages__item">
+    <div class="stages__cont">
+      <img src="img/stage3.png" class="stages__img" alt="">
+    </div>
+    <p class="stages__description">
+      When product is available for sampling, we distribute samples on a double-blind basis to a panel 
+of certified judges and collect their inputs. We proceed normalize the data (excluding any outlier feedback), and utilize the averages to further fine-tune each strain's attributes and synthesize a profile.
+    </p>
+  </li>
+  <li class="stages__item">
+    <div class="stages__cont">
+      <img src="img/stage4.png" class="stages__img" alt="">
+    </div>
+    <p class="stages__description">
+      Finally, we adjust the strain values according to 3rd party laboratory tests. Based on cannabinoid content and terpene profile, as measured by pharmaceutical-grade equipment, values are updated to correlate with the known therapeutic properties of the identified contents.
+    </p>
+  </li>
+  <li class="stages__item">
+    <div class="stages__cont">
+      <img src="img/stage5.png" class="stages__img" alt="">
+    </div>
+    <p class="stages__description">
+      Each Strain Details Page (SDP) is equipped with a "feedback" module, where users are able to modify the strain profile based on their individual experiences. Our system detects statistically significant input and makes adjustments to further democratize the strain attributes we report based on valid user input.
+    </p>
+  </li>
+</ul>
+<div class="stages__finalcont">
+  <img src="img/final.png" class="stages__final" alt="">
+</div>
+<p class="stages__text">
+  There are lots of online resources for cannabis information, so why should you choose StrainRx over the alternatives? Because trust matters the most and with us you can always count on finding the most reliable information available.
+</p>
+ </div>
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" "=""></script><script type="text/javascript">
