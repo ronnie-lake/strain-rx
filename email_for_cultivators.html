@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
+    <style type="text/css">
+      @font-face {
+        font-family: 'Gotham';
+        src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+        src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/23/b3/23b3f7fc-bdfd-48d3-a07b-bab94f6f35ae/hinted-gotham-book.eot?#iefix') format('embedded-opentype'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/1d/f2/1df24a6a-9178-4957-b406-ce998abd2893/hinted-gotham-book.woff2') format('woff2'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/28/ed/28ed3d3c-653d-4623-a0d9-454fea9c375a/hinted-gotham-book.woff') format('woff'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/2d/f4/2df42930-21e1-4c3f-82f7-f71c92969d93/hinted-gotham-book.ttf') format('truetype'),
+        url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d4/bf/d4bfb1bb-f111-4a7a-b2f9-94d00ba49581/hinted-gotham-book.svg#Gotham-Book') format('svg');
+        font-weight: 400;
+        font-style: normal;
+      }
+        @font-face {
+          font-family: 'Gotham';
+          src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot');
+          src: url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/b3/45/b345dba7-6706-476e-aa4f-f41c94008f06/hinted-gotham-bold.eot?#iefix') format('embedded-opentype'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/52/55/525528d6-1b12-4077-af7a-26473d4816a8/hinted-gotham-bold.woff2') format('woff2'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/d2/b4/d2b43640-6799-41eb-b137-c67adc3ddf0b/hinted-gotham-bold.woff') format('woff'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/fa/dd/faddadef-eb2a-4abe-b571-82e813c8fe9f/hinted-gotham-bold.ttf') format('truetype'),
+          url('https://s3.amazonaws.com:443/srx-prod/media/filer_public/82/7d/827d56e1-3b10-4627-b72f-40ad04603810/hinted-gotham-bold.svg#Gotham-Bold') format('svg');
+          font-weight: 800;
+          font-style: normal;
+        }
+
+      body {
+        margin: 0;
+      }
+
+      p {
+        margin:  0;
+      }
+
+      @media only screen and (max-width: 750px) {
+        table {
+          width: 750px;
+          background-image: url('img/mail-adaptive-back.png');
+          background-size: 100% 684px;
+          background-position: 0 102px;
+        }
+        p[class="header"] {
+          background-color: #2f3f4c;
+        }
+        p[class="header"] img {
+          width:  369px;
+          margin-bottom:  4px;
+        }
+        p[class="client"] {
+          margin-top:  3px;
+        }
+        td[class="title"] {
+          padding-top: 13px;
+          padding-right: 0;
+        }
+        td[class="title"] p {
+          width:  290px;
+          line-height: 25px;
+        }
+        td[class="subtitle"] {
+          line-height: 21px;
+          font-weight: 400;
+        }
+        div {
+          display: block;
+        }
+        tr {
+          width:  290px;
+        }
+        p[class="dont-know"] {
+          width:  210px;
+        }
+        td[class="links"] center {
+          display: block;
+          width: 100%;
+          padding: 0;
+          padding-bottom: 25px;
+        }
+        td[class="text1"],
+        td[class="text2"],
+        td[class="text3"] {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        td[class="text3"] {
+          padding-bottom: 100px;
+        }
+        td[class="badge"] {
+          padding: 23px 0 15px;
+        }
+        td[class="question"] {
+          padding-left: 55px;
+          padding-right: 55px;
+          padding-bottom: 20px;
+          line-height: 24px;
+        }
+        td[class="answer"] {
+          padding-left: 15px;
+          padding-right: 15px;
+          line-height: 25px;
+        }
+        td[class="footer"] {
+          padding: 39px 0 20px;
+          background-color: #2f3e4d;
+        }
+        tr[class="header"] {
+          background-color: #2f3f4c;
+        }
+        tr[class="header"] p {
+          height:  102px;
+        }
+        tr[class="header"] img {
+          display: inline-block;
+          margin: 0 -20px;
+          height: 102px;
+          width: 360px;
+        }
+        td[class="subtitle"] {
+          padding: 14px 15px 0;
+          line-height: 24px;
+        }
+        td[class="look"] {
+          font-weight: 400;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="0" cellspacing="0" border="0" style="font-family:Gotham;width: 600px;">
+      <tbody>
+        <tr class="header" style="height: 332px">
+          <td style="width: 100%; background:url(img/cultivators-background.png)">
+          </td>
+        </tr>
+        <tr class="descript" style="background-color: #4c9d82;">
+          <td style="padding: 10px 0 27px 36px">
+            <div style="width: 32%;display: inline-block; vertical-align: top;">
+              <h2 style="font-family:Gotham;color:#ffffff;font-weight:800;font-size:21px; text-align: center; margin: 23px 0 10px 9px; width: 150px;">Get Discovered</h2>
+              <ul style="list-style: none;padding:0;margin:0;">
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Be seen by potential new customers</span></li>
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Receive authentic, trustworthy reviews</span></li>
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Get top placement in search results</span></li>
+              </ul>
+            </div>
+            <div style="width: 32%;display: inline-block; vertical-align: top;">
+              <h2 style="font-family:Gotham;color:#ffffff;font-weight:800;font-size:21px; text-align: center;margin: 23px 0 10px 9px; width: 150px;">Show Your Products</h2>
+              <ul style="list-style: none;padding:0;margin:0;">
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;"> Display every strain, cannabinoid & terpene</span></li>
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Guide buyers to where your products are sold</span></li>
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Showcase inventory to wholesale buyers</span></li>
+              </ul>
+            </div>
+            <div style="width: 32%;display: inline-block; vertical-align: top;">
+              <h2 style="font-family:Gotham;color:#ffffff;font-weight:800;font-size:21px; text-align: center; margin: 23px 0 10px 9px; width: 150px;">Connect With Buyers</h2>
+              <ul style="list-style: none;padding:0;margin:0;">
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Educate buyers with smart labels</span></li>
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Easily measure strain popularity</span></li>
+                <li><span style="background: url(img/birdy.png) no-repeat;display: inline-block;width: 10px; height: 10px;margin-right: 3px;    vertical-align: top;margin-top: 2px;"></span><span style="display: inline-block;font-family:Gotham;color:#ffffff;font-weight:400;font-size:13px; width: 145px; margin-bottom: 9px; letter-spacing: -0.5px; line-height: 16px;">Identify & reward loyal customers</span></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 40px 0 42px">
+            <h2 style="font-family:Gotham;color:#000000;font-weight:800;font-size:21px; text-align: center; letter-spacing: -0.6px; margin-bottom: 0;g">Stand out from your competition. Share your story.</h2>
+            <span style="text-align: center;display: block; font-family:Gotham;color:#000000;font-weight:400;font-size:21px; text-align: center; line-height: 25px;">Enable informed, conscientious, and purposeful
+cannabis use for happier, healthier lives.</span>
+            <ul style="list-style: none;padding: 0;margin: 0; margin-top: 31px;">
+              <li style="width: 49%; text-align: center;display: inline-block; margin-bottom: 2px;">
+                <img src="img/compet1.png" alt="" style="width: 29%" />
+                <span style="display: inline-block; font-family:Gotham;color:#000000;font-weight:400;font-size:18px; text-align: center; width: 220px;margin-top: 5px; line-height: 21px; margin-bottom: 20px;">Build and differentiate your brand</span>
+              </li>
+              <li style="width: 49%; text-align: center;display: inline-block; margin-bottom: 2px;">
+                <img src="img/compet2.png" alt="" style="width: 29%" />
+                <span style="display: inline-block; font-family:Gotham;color:#000000;font-weight:400;font-size:18px; text-align: center; width: 220px;margin-top: 5px; line-height: 21px; margin-bottom: 20px;">Showcase your products & your mission</span>
+              </li>
+              <li style="width: 49%; text-align: center;display: inline-block; margin-bottom: 2px;">
+                <img src="img/compet3.png" alt="" style="width: 25%" />
+                <span style="display: inline-block; font-family:Gotham;color:#000000;font-weight:400;font-size:18px; text-align: center; width: 220px;margin-top: 5px; line-height: 21px; margin-bottom: 20px;">Sell more, foster loyalty</span>
+              </li>
+              <li style="width: 49%; text-align: center;display: inline-block; margin-bottom: 2px;">
+                <img src="img/compet4.png" alt="" style="width: 26%" />
+                <span style="display: inline-block; font-family:Gotham;color:#000000;font-weight:400;font-size:18px; text-align: center; width: 220px;margin-top: 5px; line-height: 21px; margin-bottom: 20px;">Earn customer trust</span>
+              </li>
+              <li style="width: 49%; text-align: center;display: inline-block; margin-bottom: 2px;">
+                <img src="img/compet5.png" alt="" style="width: 26%" />
+                <span style="display: inline-block; font-family:Gotham;color:#000000;font-weight:400;font-size:18px; text-align: center; width: 220px;margin-top: 5px; line-height: 21px; margin-bottom: 20px;">Engage your audience & promote special offers</span>
+              </li>
+              <li style="width: 49%; text-align: center;display: inline-block; margin-bottom: 2px;">
+                <img src="img/compet6.png" alt="" style="width: 29%" />
+                <span style="display: inline-block; font-family:Gotham;color:#000000;font-weight:400;font-size:18px; text-align: center; width: 220px;margin-top: 5px; line-height: 21px; margin-bottom: 20px;">Get valuable data</span>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <h2 style="margin: 14px 0 1px 0; font-family:Gotham;color:#000000;font-weight:800;font-size:21px; text-align: center;">Wanna learn more?</h2>
+            <span style="line-height: 25px; text-align: center;display: block; font-family:Gotham;color:#000000;font-weight:400;font-size:21px; text-align: center;">Use <a href="#" style="color: #0465dd;">this link</a> to schedule a time to discuss the many features and benefits of StrainRx.</span>
+            <h2 style="font-family:Gotham;color:#000000;font-weight:800;font-size:21px; text-align: center; margin: 31px 0 11px 0;">Ready to get started?</h2>
+            <a href="#" style="display: inline-block;border-radius: 10px;text-decoration: none; padding: 18px 35px 14px 34px; box-sizing: border-box; width: 210px;height: 55px; background-color: #37ac5a; font-family:Gotham;color:#ffffff;font-weight:400;font-size:20px; letter-spacing: -1px;">Sign Up Now</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
